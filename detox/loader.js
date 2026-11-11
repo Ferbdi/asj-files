@@ -1,4 +1,4 @@
-/* Detox landing loader for Tilda (build 74-a9068356).
+/* Detox landing loader for Tilda (build 74-253fc00f).
    Tilda block T123 holds only:
      <div id="asj-detox"></div>
      <script src="https://<file hosting>/detox/loader.js"></script>
@@ -7,7 +7,7 @@
   if (window.ASJ_DETOX && window.ASJ_DETOX.loaded) return;
   var me = document.currentScript;
   var BASE = me.src.replace(/[?#].*$/, '').replace(/[^\/]*$/, '');
-  var V = '__VERSION__';
+  var V = '74-253fc00f';
   var cfg = {"leadEndpoint":"","tgBotUrl":"","waUrl":""};
   cfg.base = BASE; cfg.version = V; cfg.loaded = true;
   window.ASJ_DETOX = cfg;
@@ -28,7 +28,7 @@
   var cssReady = new Promise(function (ok) { css.onload = ok; css.onerror = ok; setTimeout(ok, 8000); });
 
   function runScripts(list, i) {
-    if (i >= list.length) { root.setAttribute('data-ready', V); fireHash(); return; }
+    if (i >= list.length) { root.setAttribute('data-ready', V); fireHash(); loadAhead(); return; }
     var old = list[i], s = document.createElement('script');
     for (var a = 0; a < old.attributes.length; a++) s.setAttribute(old.attributes[a].name, old.attributes[a].value);
     if (old.src) {
@@ -39,6 +39,17 @@
       old.parentNode.replaceChild(s, old);
       runScripts(list, i + 1);
     }
+  }
+  // photos in sideways-moving strips and galleries: lazy loading starts them only when they are already on screen,
+  // so whole blocks get their photos ~1.5 screens before the user reaches them
+  function loadAhead() {
+    var blocks = [].slice.call(root.querySelectorAll('section, header, footer, .strip, .pg'));
+    var go = function (el) { [].forEach.call(el.querySelectorAll('img[loading="lazy"]'), function (im) { im.loading = 'eager'; }); };
+    if (!('IntersectionObserver' in window)) { blocks.forEach(go); return; }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { go(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '1200px 0px 1200px 0px' });
+    blocks.forEach(function (b) { io.observe(b); });
   }
   // the page opened with #price etc.: scroll there once the landing is in place
   function fireHash() {
