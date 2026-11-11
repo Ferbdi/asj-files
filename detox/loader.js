@@ -24,7 +24,7 @@
   }
   link('https://fonts.gstatic.com', 'preconnect');
   link('https://fonts.googleapis.com/css2?family=Vidaloka&family=Montserrat:wght@400;500;600;700&display=swap', 'stylesheet');
-  var css = link(BASE + 'detox.css?v=' + V, 'stylesheet');
+  var css = link(BASE + 'detox.css', 'stylesheet'); /* no ?v=: the same address can be preloaded from the Tilda page HEAD; the host caches 10 min */
   var cssReady = new Promise(function (ok) { css.onload = ok; css.onerror = ok; setTimeout(ok, 8000); });
 
   function runScripts(list, i) {
@@ -58,7 +58,7 @@
     if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
   }
 
-  fetch(BASE + 'detox.html?v=' + V).then(function (r) {
+  fetch(BASE + 'detox.html').then(function (r) {
     if (!r.ok) throw new Error('detox.html ' + r.status); return r.text();
   }).then(function (markup) {
     markup = markup.replace(/(["'(])img\//g, '$1' + BASE + 'img/');
