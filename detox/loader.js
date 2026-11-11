@@ -50,12 +50,23 @@
       es.forEach(function (e) { if (e.isIntersecting) { go(e.target); io.unobserve(e.target); } });
     }, { rootMargin: '1200px 0px 1200px 0px' });
     blocks.forEach(function (b) { io.observe(b); });
+    // then quietly fetch all other photos top to bottom, 3 at a time, so scrolling never waits for them
+    setTimeout(function () {
+      var q = [].slice.call(root.querySelectorAll('img[loading="lazy"]')).map(function (im) { return im.getAttribute('src'); })
+        .filter(function (u, i, a) { return u && a.indexOf(u) === i; });
+      var next = function () { var u = q.shift(); if (!u) return; var im = new Image(); im.onload = im.onerror = next; im.src = u; };
+      next(); next(); next();
+    }, 1500);
   }
   // the page opened with #price etc.: scroll there once the landing is in place
   function fireHash() {
     var h = location.hash && location.hash.slice(1);
     var t = h && document.getElementById(decodeURIComponent(h));
-    if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
+    if (!t) return;
+    var moved = false, stop = function () { moved = true; };
+    ['wheel', 'touchstart', 'keydown'].forEach(function (e) { window.addEventListener(e, stop, { once: true, passive: true }); });
+    // jump now, and once more after photos above have settled, unless the visitor already scrolls
+    [50, 900, 2000].forEach(function (ms) { setTimeout(function () { if (!moved) t.scrollIntoView(); }, ms); });
   }
 
   fetch(BASE + 'detox.html').then(function (r) {
