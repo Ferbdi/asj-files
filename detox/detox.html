@@ -1,5 +1,5 @@
-<!-- Detox landing v74 body. Loaded by loader.js into #asj-detox. -->
-<div class="draft"><span>Черновик дизайна, версия 74 от 12.11.2026 · жёлтым отмечено то, что ещё уточняем</span></div>
+<!-- Detox landing v75 body. Loaded by loader.js into #asj-detox. -->
+<div class="draft"><span>Черновик дизайна, версия 75 от 12.11.2026 · жёлтым отмечено то, что ещё уточняем</span></div>
 
 <nav class="top" aria-label="Разделы страницы">
   <div class="wrap">
@@ -822,10 +822,13 @@
     for(var ri=0;ri<radios.length;ri++) radios[ri].addEventListener('change',applyChan);
     applyChan();
     /* a price card passes its room to the form, so the form does not have to ask */
-    var room='', setRoom=function(r){ room=r||''; $('f-room').textContent=room; $('f-picked').hidden=!room; };
+    var room='', pickedBtn=null, setRoom=function(r){ room=r||''; $('f-room').textContent=room; $('f-picked').hidden=!room; };
     var picks=document.querySelectorAll('[data-room]');
-    for(var pi=0;pi<picks.length;pi++) picks[pi].addEventListener('click',function(){ setRoom(this.getAttribute('data-room')); });
-    $('f-unpick').addEventListener('click',function(){ setRoom(''); });
+    for(var pi=0;pi<picks.length;pi++) picks[pi].addEventListener('click',function(){ pickedBtn=this; setRoom(this.getAttribute('data-room')); });
+    /* the price script repaints data-room first; then the picked room in the form is refreshed */
+    var adds=document.querySelectorAll('#price .add input');
+    for(var ai=0;ai<adds.length;ai++) adds[ai].addEventListener('change',function(){ if(pickedBtn) setRoom(pickedBtn.getAttribute('data-room')); });
+    $('f-unpick').addEventListener('click',function(){ pickedBtn=null; setRoom(''); });
     /* the floating WhatsApp button must not cover the fields */
     if(wa&&window.IntersectionObserver) new IntersectionObserver(function(en){ wa.classList.toggle('off',en[0].isIntersecting); },{rootMargin:'-80px 0px -40px 0px'}).observe(f);
     nameI.addEventListener('input',function(){ if(nameI.hasAttribute('aria-invalid')) checkName(); });

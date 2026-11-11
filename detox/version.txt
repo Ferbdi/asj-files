@@ -1,4 +1,4 @@
-landing v74
-build 74-89bae88e
-source /mnt/project-files/detox-landing/detox-landing-source-v74.html
-built 2026-11-11T23:43:57.362Z
+landing v75
+build 75-cd22424c
+source /mnt/project-files/detox-landing/detox-landing-source-v75.html
+built 2026-11-11T23:46:13.833Z
