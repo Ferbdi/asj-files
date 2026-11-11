@@ -1,0 +1,972 @@
+<!-- Detox landing v74 body. Loaded by loader.js into #asj-detox. -->
+<div class="draft"><span>Черновик дизайна, версия 74 от 12.11.2026 · жёлтым отмечено то, что ещё уточняем</span></div>
+
+<nav class="top" aria-label="Разделы страницы">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ананда Самбхути">
+      <span class="mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-4 6-4 9a4 4 0 0 0 8 0c0-3-1-6-4-9z"/><path d="M4 14c2 4 5 6 8 6s6-2 8-6"/></svg></span>
+      <span><b>Ананда Самбхути</b><small>духовный центр · Джамалпур, Бихар</small></span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#forwhom">Для кого</a>
+      <a href="#leaders">Кто ведёт</a>
+      <a href="#program">Программа</a>
+      <a class="mo" href="#exit">Экскурсионные дни</a>
+      <a href="#place">Место</a>
+      <a class="mo" href="#reviews">Отзывы</a>
+      <a href="#price">Цена</a>
+      <a href="#road">Как добраться</a>
+      <a href="#faq">Вопросы</a>
+    </div>
+    <a class="btn" href="#apply">Забронировать</a>
+    <button class="navbtn" type="button" aria-label="Меню" aria-expanded="false" aria-controls="navlinks"><svg class="m" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg><svg class="x" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</nav>
+<script>(function(){var nav=document.querySelector("nav.top"),b=nav&&nav.querySelector(".navbtn");if(!b)return;function set(o){nav.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Закрыть меню":"Меню");}b.addEventListener("click",function(){set(!nav.classList.contains("open"));});nav.querySelector(".navlinks").addEventListener("click",function(e){if(e.target.closest("a"))set(false);});document.addEventListener("click",function(e){if(!nav.contains(e.target))set(false);});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&nav.classList.contains("open")){set(false);b.focus();}});})();</script>
+
+<!-- 1. Первый экран -->
+<header class="hero" id="top">
+  <div class="hc" aria-hidden="true"></div><div class="hc right" aria-hidden="true"></div>
+  <div class="head">
+    <p class="date">1–7 марта 2027, Джамалпур, Бихар</p>
+    <h1>Йога-детокс <br class="m">в&nbsp;сердце Индии.<br>7 дней для тела, <br class="m">ума и души</h1>
+    <p class="sub">Детокс-питание и оздоровительные процедуры по&nbsp;личному протоколу, йога и&nbsp;медитация.</p>
+    <div class="cta"><a class="btn plaque" href="#apply">Забронировать место</a></div>
+    <p class="note"><span>Заявка без оплаты.</span> <span>Есть вопросы? <a href="#apply">Напишите нам</a>.</span></p>
+  </div>
+  <div class="dawn">
+    <div class="rays" aria-hidden="true"><img class="mand" src="img/mandala.svg" alt=""></div>
+    <div class="disc"><video muted loop playsinline preload="metadata" poster="img/hero-poster.webp" aria-label="Ананда Самбхути: здание центра, рисовые поля и холмы с высоты"><source src="img/hero2.mp4" type="video/mp4"></video></div>
+    <button class="vctl" type="button" id="heroCtrl" aria-pressed="false" aria-label="Поставить видео на паузу"><svg class="ic-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="4" height="12" rx="1"/><rect x="9" y="2" width="4" height="12" rx="1"/></svg><svg class="ic-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6z"/></svg></button>
+  </div>
+  <svg class="hills" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="hg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0e4d2"/><stop offset=".5" stop-color="#cfd5bd"/></linearGradient><linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfcaad"/><stop offset=".5" stop-color="#a9b896"/></linearGradient><linearGradient id="hg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#95aa85"/><stop offset=".5" stop-color="#7d966e"/></linearGradient><linearGradient id="hg4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a885e"/><stop offset=".5" stop-color="#55734b"/></linearGradient><linearGradient id="hg5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#48633f"/><stop offset=".5" stop-color="#385231"/></linearGradient></defs><path class="h1" fill="url(#hg1)" d="M-60 62C-35 56.7 42 37.7 90 30C138 22.3 185 13.7 230 16C275 18.3 318 32.3 360 44C402 55.7 440 76.0 480 86C520 96.0 558 102.3 600 104C642 105.7 687 95.0 730 96C773 97.0 817 110.7 860 110C903 109.3 948 100.7 990 92C1032 83.3 1068 68.3 1110 58C1152 47.7 1197 31.7 1240 30C1283 28.3 1327 41.3 1370 48C1413 54.7 1478 66.3 1500 70V260H-60Z"/><path class="h2" fill="url(#hg2)" d="M-60 100C-37 98.0 35 93.7 80 88C125 82.3 167 71.0 210 66C253 61.0 297 55.0 340 58C383 61.0 428 74.3 470 84C512 93.7 548 109.0 590 116C632 123.0 677 125.0 720 126C763 127.0 810 123.7 850 122C890 120.3 922 119.7 960 116C998 112.3 1040 108.3 1080 100C1120 91.7 1158 76.0 1200 66C1242 56.0 1290 42.3 1330 40C1370 37.7 1412 48.3 1440 52C1468 55.7 1490 60.3 1500 62V260H-60Z"/><path class="h3" fill="url(#hg3)" d="M-60 124C-38 121.7 27 114.7 70 110C113 105.3 157 97.0 200 96C243 95.0 287 99.0 330 104C373 109.0 415 119.7 460 126C505 132.3 553 140.0 600 142C647 144.0 693 137.3 740 138C787 138.7 835 146.0 880 146C925 146.0 965 144.0 1010 138C1055 132.0 1105 118.3 1150 110C1195 101.7 1238 90.0 1280 88C1322 86.0 1363 94.7 1400 98C1437 101.3 1483 106.3 1500 108V260H-60Z"/><path class="h4" fill="url(#hg4)" d="M-60 132C-32 133.0 58 138.7 110 138C162 137.3 202 127.3 250 128C298 128.7 348 137.0 400 142C452 147.0 510 155.7 560 158C610 160.3 650 155.0 700 156C750 157.0 807 163.7 860 164C913 164.3 968 161.7 1020 158C1072 154.3 1122 147.7 1170 142C1218 136.3 1267 127.7 1310 124C1353 120.3 1398 120.0 1430 120C1462 120.0 1488 123.3 1500 124V260H-60Z"/><path class="h5" fill="url(#hg5)" d="M-60 146C-33 146.7 47 148.7 100 150C153 151.3 205 152.3 260 154C315 155.7 372 157.3 430 160C488 162.7 550 168.7 610 170C670 171.3 732 167.3 790 168C848 168.7 903 175.0 960 174C1017 173.0 1075 166.7 1130 162C1185 157.3 1228 149.3 1290 146C1352 142.7 1465 142.7 1500 142V260H-60Z"/><path class="h6" d="M-60 164C-27 164.7 77 166.3 140 168C203 169.7 260 171.8 320 174C380 176.2 440 179.3 500 181C560 182.7 620 184.0 680 184C740 184.0 800 180.7 860 181C920 181.3 980 186.5 1040 186C1100 185.5 1163 180.7 1220 178C1277 175.3 1333 171.8 1380 170C1427 168.2 1480 167.5 1500 167V260H-60Z"/></svg>
+</header>
+
+<!-- 1a. Доводы и «Всё включено» сразу под первым экраном -->
+<section class="ground" aria-label="Почему к нам и что включено">
+  <div class="wrap">
+    <ul class="args">
+      <li><svg class="ic" viewBox="0 0 75 75" fill="none" aria-hidden="true"><circle cx="37.728" cy="37.8674" r="36.0131" class="ring" stroke-width="2"/><circle cx="37.7277" cy="37.8647" r="30.6955" class="dsc"/><path d="M24.9863 26.7042C31.5039 27.214 36.6339 32.6644 36.6339 39.3129V44.0567C30.1163 43.5469 24.9863 38.0965 24.9863 31.448V26.7042Z" class="ln" stroke-width="2"/><path d="M17.077 37.6861C21.3221 35.6036 26.5417 37.0194 29.1171 41.1106L30.8959 43.9364C26.6508 46.0189 21.4313 44.6031 18.8559 40.5119L17.077 37.6861Z" class="ln" stroke-width="2"/><path d="M58.5886 37.6717C57.3586 42.2373 52.8547 45.2313 48.0802 44.4735L44.7824 43.95C46.0125 39.3845 50.5163 36.3904 55.2908 37.1483L58.5886 37.6717Z" class="ln" stroke-width="2"/><path d="M50.252 26.7248C43.7506 27.2346 38.6338 32.6717 38.6338 39.3039V44.0351C45.1351 43.5254 50.252 38.0883 50.252 31.456V26.7248Z" class="ln" stroke-width="2"/><path d="M49.7642 49.7498C48.6801 46.2047 45.1122 43.9232 41.3552 44.5467L38.8497 44.9625C39.9337 48.5076 43.5017 50.7891 47.2587 50.1656L49.7642 49.7498Z" class="ln" stroke-width="2"/><path d="M26.9625 50.0462C30.3826 51.4563 34.4023 50.1514 36.3026 46.8599L37.5694 44.6657C34.1493 43.2555 30.1296 44.5605 28.2293 47.852L26.9625 50.0462Z" class="ln" stroke-width="2"/><path d="M35.8159 26.1652L37.6342 23.0159L39.4525 26.1652C40.2606 27.5649 39.2504 29.3145 37.6342 29.3145C36.018 29.3145 35.0078 27.5649 35.8159 26.1652Z" class="ln" stroke-width="2"/></svg><span>Процедуры и приём специалистов <em>каждый день</em></span></li>
+      <li><svg class="ic" viewBox="0 0 75 75" fill="none" aria-hidden="true"><circle cx="37.728" cy="37.7941" r="36.0131" class="ring" stroke-width="2"/><circle cx="37.7277" cy="37.7914" r="30.6955" class="dsc"/><path d="M41.011 44.6555H48.3743C50.2874 44.6555 51.8605 46.2286 51.8605 48.1417C51.8605 50.0549 50.2981 51.6279 48.3743 51.6279H27.5633C25.6502 51.6279 24.0771 50.0655 24.0771 48.1417C24.0771 46.2286 25.6396 44.6555 27.5633 44.6555H35.196" class="ln" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.9736 31.2952C31.3368 31.2952 30.2314 32.9532 30.8479 34.4625L36.7362 48.1416" class="ln" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.5371 31.2952H42.9638C44.6006 31.2952 45.706 32.9532 45.0896 34.4625L39.2013 48.1416" class="ln" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.0968 28.9356C36.3431 28.9356 34.9082 27.5007 34.9082 25.747V21.6868C34.9082 20.7302 35.6947 19.9543 36.6407 19.9543H39.5529C40.5095 19.9543 41.2854 20.7409 41.2854 21.6868V25.747C41.2854 27.5007 39.8505 28.9356 38.0968 28.9356Z" class="ln" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Медитации <em>с монахами</em> йогической традиции</span></li>
+      <li><svg class="ic" viewBox="0 0 74 75" fill="none" aria-hidden="true"><circle cx="37" cy="37.8667" r="36" class="ring" stroke-width="2"/><circle cx="37.0002" cy="37.8666" r="30.6955" class="dsc"/><path d="M25.8311 25.2794C32.3487 25.7892 37.4787 31.2396 37.4787 37.8881V42.6319C30.961 42.1221 25.8311 36.6717 25.8311 30.0232V25.2794Z" class="ln" stroke-width="2"/><path d="M37.3818 41.0022V53.2087" class="ln" stroke-width="2"/><path d="M46.1689 35.0068C41.343 35.5069 37.5799 39.5862 37.5799 44.5444V47.9797C42.4058 47.4796 46.1689 43.4003 46.1689 38.4421V35.0068Z" class="ln" stroke-width="2"/><path d="M42.8223 25.328C40.0832 25.8021 37.9999 28.1901 37.9999 31.0647V32.8699C40.739 32.3958 42.8223 30.0078 42.8223 27.1332V25.328Z" class="ln" stroke-width="2"/></svg><span><em>135 акров</em> тишины и субтропической природы</span></li>
+    </ul>
+  </div>
+  <div class="allin" role="note"><div class="wrap"><div class="tix"><b>Всё включено</b><ul><li><span><strong>Проживание</strong> и&nbsp;<strong>питание</strong></span></li><li><span>Все <strong>процедуры</strong>, групповые <strong>занятия</strong> и&nbsp;работа со&nbsp;<strong>специалистами</strong></span></li><li><span><strong>Травы</strong>, <strong>аюрведа</strong> и&nbsp;косметические средства</span></li></ul></div></div></div>
+</section>
+
+<!-- 2. Для кого и с чем уедете -->
+<section class="band" id="forwhom">
+  <div class="shape contours" style="left:-260px;top:40px" data-px="0.12"></div>
+  <div class="shape contours small" style="right:-120px;top:420px" data-px="-0.1"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Кому идеально подойдёт йога-детокс?</h2>
+    </div>
+    <div class="cards4">
+      <div class="card"><span class="n">1</span><h3>Голова не выключается</h3><p>Работа, телефон, тревога даже в отпуске. Нужно место, где ни о чём не надо думать.</p></div>
+      <div class="card"><span class="n">2</span><h3>Сон не помогает</h3><p>Усталость уже с утра. Внутренний огонь пропал, нет ни сил, ни мотивации что-то делать.</p></div>
+      <div class="card"><span class="n">3</span><h3>Тело просит перезагрузки</h3><p>Тяжело двигаться и постоянно что-то болит, сложности с пищеварением, тусклая кожа и потухший взгляд. Хочется что-то с этим делать, но нет сил.</p></div>
+      <div class="card"><span class="n">4</span><h3>Хочу в Индию, но спокойно</h3><p>Никогда не были в Индии, но давно мечтали. Хочется, чтобы первая поездка была безопасной, вдохновляющей и трансформирующей.</p></div>
+    </div>
+    <div class="results gains">
+      <h3>С чем уедете</h3>
+      <ul>
+        <li>Ясная, свободная голова</li>
+        <li>Сон и энергия, которых давно не было</li>
+        <li>Лёгкость в теле, которая чувствуется сразу</li>
+        <li>Погружение в атмосферу Индии без суеты и спешки, в комфорте и чистоте</li>
+        <li>Новый взгляд на себя, свою работу, отношения и жизнь</li>
+      </ul>
+    </div>
+    <p class="notfor"><b>Кому не подойдёт:</b><span>при острых и тяжёлых заболеваниях, беременности <span class="tbd">список от врача</span>; тем, кто ищет жёсткое голодание или пляж и вечеринки.</span></p>
+  </div>
+</section>
+
+<section class="strip" aria-label="Фотографии центра">
+  <div class="strip-track"><img class="leaf" src="img/rock-view.webp" alt="Вид с холма на долину" loading="lazy"><img class="arch" src="img/aerial-house.webp" alt="Дом центра с высоты" loading="lazy"><img class="leaf" src="img/candles.webp" alt="Свечи на ступенях вечером" loading="lazy"><img class="arch" src="img/rose.webp" alt="Роза в саду центра" loading="lazy"><img class="sq" src="img/rock-group.webp" alt="Группа на скалах" loading="lazy"><img class="round" src="img/puppy.webp" alt="Щенок на территории" loading="lazy"><img class="leaf" src="img/sunset-palms.webp" alt="Закат над пальмами" loading="lazy"><img class="arch" src="img/garden.webp" alt="Огород центра" loading="lazy"><img class="sq" src="img/path-sunset.webp" alt="Дорожка к центру на закате" loading="lazy"><img class="round" src="img/lychee.webp" alt="Личи" loading="lazy"><img class="leaf" src="img/rock-view.webp" alt="" aria-hidden="true" loading="lazy"><img class="arch" src="img/aerial-house.webp" alt="" aria-hidden="true" loading="lazy"><img class="leaf" src="img/candles.webp" alt="" aria-hidden="true" loading="lazy"><img class="arch" src="img/rose.webp" alt="" aria-hidden="true" loading="lazy"><img class="sq" src="img/rock-group.webp" alt="" aria-hidden="true" loading="lazy"><img class="round" src="img/puppy.webp" alt="" aria-hidden="true" loading="lazy"><img class="leaf" src="img/sunset-palms.webp" alt="" aria-hidden="true" loading="lazy"><img class="arch" src="img/garden.webp" alt="" aria-hidden="true" loading="lazy"><img class="sq" src="img/path-sunset.webp" alt="" aria-hidden="true" loading="lazy"><img class="round" src="img/lychee.webp" alt="" aria-hidden="true" loading="lazy"></div>
+</section>
+
+<!-- 3. Чем мы отличаемся -->
+<section class="band white" id="why">
+  <div class="wrap">
+    <div class="diff">
+      <div>
+        <div class="sec-head">
+          <h2>Не курорт, не клиника и не жёсткий ретрит</h2>
+          <p class="why">Духовный центр, где о здоровье заботятся специалисты аюрведы, а медитацию ведут монахи.</p>
+        </div>
+        <ol>
+          <li><span class="num">1</span><div><b>Мягкое всестороннее восстановление</b><p>Личный протокол процедур на весь ретрит и поддержка специалиста аюрведы каждый день.</p></div></li>
+          <li><span class="num">2</span><div><b>Медитации ведут йогические монахи</b><p>Учителя глубокой традиции, обучившие сотни людей.</p></div></li>
+          <li><span class="num">3</span><div><b>ПРАМА: тело, ум и душа в одной системе</b><p>Не набор процедур, а равновесие, к которому вы двигаетесь 7 дней.</p></div></li>
+          <li><span class="num">4</span><div><b>Можно ни о чём не думать</b><p>Мы обо всём позаботимся: комфортное проживание, здоровое питание, мягкое движение, аюрведические процедуры и полная перезагрузка.</p></div></li>
+          <li><span class="num">5</span><div><b>Особенное место: духовный центр среди зелёных холмов</b><p>Благоприятная атмосфера и чистое место. Здесь живут монахи, постоянно проходят ретриты и медитационные программы.</p></div></li>
+        </ol>
+      </div>
+      <div class="photo-stack">
+        <img class="main" src="img/meditation-group.webp" alt="Групповая медитация в зале центра" data-px="0.08" loading="lazy" decoding="async">
+        <img class="small" src="img/rock-view.webp" alt="Участник на скале над долиной Джамалпура" data-px="-0.14" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Кто ведёт -->
+<section class="band" id="leaders">
+  <div class="shape contours" style="right:-240px;top:-120px;width:640px;height:640px" data-px="0.1"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Кто ведёт йога-детокс?</h2>
+    </div>
+    <div class="people">
+      <svg class="wave" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 C150 10 250 150 400 80 S650 10 800 80 S1050 150 1200 80" fill="none" stroke="#c4cbaf" stroke-width="2" stroke-dasharray="4 8"/></svg>
+      <div class="person">
+        <div class="photo" aria-hidden="true"><span>А</span></div>
+        <span class="role">Врач программы</span>
+        <h3>Доктор Амит <span class="tbd">фамилия</span></h3>
+        <p class="lead">Встретится с каждым в первый день, составит личный протокол и будет рядом всю неделю.</p>
+        <ul class="pf"><li><span class="tbd">специализация</span></li><li><span class="tbd">стаж</span></li></ul>
+      </div>
+      <div class="person">
+        <div class="photo"><img src="img/person-lilapriya.webp" alt="Диди Ананда Лилаприя" loading="lazy"></div>
+        <span class="role">Медитация · йога</span>
+        <h3>Диди Ананда Лилаприя</h3>
+        <p class="lead">Монахиня йогической традиции. Постоянно путешествует по разным точкам мира, обучая йоге и медитации.</p>
+        <ul class="pf"><li>Практикует с 2011 года</li><li>Полное монашество с 2020</li></ul>
+        <p>Училась в монастырях на Филиппинах и в Индии.</p>
+      </div>
+      <div class="person">
+        <div class="photo"><img src="img/person-shubha.webp" alt="Дада Шубханирьясананда" loading="lazy"></div>
+        <span class="role">Медитация · лекции</span>
+        <h3>Дада Шубханирьясананда</h3>
+        <p class="lead">Монах йогической традиции, основатель и директор духовного центра «Ананда Самбхути». Обучает медитации уже 36 лет.</p>
+        <ul class="pf"><li>54 года практики</li><li>2500 учеников</li></ul>
+      </div>
+      <div class="person">
+        <div class="photo"><img src="img/person-prasannacitta.webp" alt="Дада Прасанчит" loading="lazy"></div>
+        <span class="role">Медитация · управляющий центра</span>
+        <h3>Дада Прасанчит</h3>
+        <p class="lead">Монах йогической традиции, управляющий и организатор программ центра «Ананда Самбхути».</p>
+        <ul class="pf"><li>Медитирует с <span class="tbd">года</span></li><li>Преподаёт в Индии, Китае, на Тайване и в СНГ</li></ul>
+      </div>
+      <div class="person">
+        <div class="photo" aria-hidden="true"><span>М</span></div>
+        <span class="role">Асаны · программа</span>
+        <h3>Марина Семенихина</h3>
+        <p class="lead">Йога-инструктор проекта «Урокимедитации», йогатерапевт, преподаватель раджадхираджа-йоги и хатха-йоги.</p>
+        <ul class="pf"><li>Преподаёт с 2010 года</li><li>Личная практика с 2000 года</li></ul>
+      </div>
+    </div>
+    <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M15 7l5 5-5 5"/></svg>Листайте вбок</p>
+    <p class="group-note"><span class="badge">Кухня</span><span>Команда из <span class="tbd">N</span> человек под руководством нутрициолога разработала для вас детокс-меню. За 7 дней вы разгрузите пищеварение, дадите отдых организму и ощутите забытую лёгкость в теле.</span></p>
+  </div>
+</section>
+
+<!-- 6b. Что будет каждый день -->
+<section class="band white" id="program">
+  <div class="shape contours small" style="right:-140px;top:40px" data-px="-0.08"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Как проходит каждый день на детоксе?</h2>
+      <p class="why">Режим дня, созвучный природным ритмам.</p>
+    </div>
+    <div class="stages">
+      <div class="st st1"><img src="img/aerial-house.webp" alt="Центр с высоты" loading="lazy"><div><i>1</i><b>До приезда</b><p>При регистрации вы заполняете анкету о здоровье, чтобы мы заранее учли все нюансы самочувствия. За неделю до детокса присылаем рекомендации по питанию и режиму дня: начните готовиться дома, и адаптация пройдёт мягко. Накануне поездки вышлем инструкции по дороге, а менеджер будет на связи до самого трансфера.</p></div></div>
+      <div class="st st2"><img src="img/meditation-hall.webp" alt="Зал центра" loading="lazy"><div><i>2</i><b>День 1: адаптация и приём главного врача</b><p>Личная встреча со специалистом программы: осмотр, простые тесты, разговор о самочувствии и задачах, с которыми вы приехали. По анкете и беседе он составит ваш личный набор процедур на 7 дней.</p><p>Если вы не говорите по-английски, мы предоставим переводчика.</p></div></div>
+      <div class="st st3"><img src="img/asana.webp" alt="Класс асан в зале" loading="lazy"><div><i>3</i><b>Дни 2–7: индивидуальные процедуры и групповые занятия</b><p>День начинается с рассветом: очищающие процедуры, мягкая йога и медитация. Середина дня для личных процедур, встреч со специалистами и занятий по йогическому образу жизни, которые можно продолжать дома. Вечер для природы, расслабления, медитации и мягких процедур перед сном.</p><p>Трёхразовое детокс-питание вписано в ритм дня.</p></div></div>
+      <div class="st st4"><img src="img/path-sunset.webp" alt="Дорожка к центру на закате" loading="lazy"><div><i>4</i><b>7 марта. Последний день</b><p>Финальная встреча с главным врачом и его рекомендации для домашней практики. Можно остаться ещё на 3 экскурсионных разгрузочных дня, чтобы плавно вернуться в привычный ритм дня и питания. Трансфер до аэропорта оплачивается отдельно.</p></div></div>
+    </div>
+    <div class="deck" id="deck">
+      <div class="deck-head prama4" id="prama">
+        <div class="ph-text">
+          <span class="kicker">Равновесный принцип в основе программы</span>
+          <h3>ПРАМА: баланс тела, ума и души</h3>
+          <p>«Прама» переводится с санскрита как «равновесие». Человек живёт в трёх сферах одновременно. Когда какой-то из них уделяется недостаточно внимания, приходят усталость, апатия, тяжесть и потеря смысла. На программе мы восстанавливаем это равновесие: в теле, уме и душе.</p>
+          <p class="src">Идея ПРАМА: Шри Шри Анандамурти</p>
+        </div>
+        <svg class="tri4" viewBox="0 0 360 320" role="img" aria-label="Треугольник: тело, ум, душа, в центре равновесие">
+          <defs>
+            <linearGradient id="t4fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#e5e4d4" stop-opacity=".95"/></linearGradient>
+            <linearGradient id="t4edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fcfdc"/><stop offset=".5" stop-color="#d99a5b"/><stop offset="1" stop-color="#a9c48a"/></linearGradient>
+            <radialGradient id="t4glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6123" stop-opacity=".45"/><stop offset=".6" stop-color="#ff6123" stop-opacity=".08"/><stop offset="1" stop-color="#ff6123" stop-opacity="0"/></radialGradient>
+            <filter id="t4shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#20281a" flood-opacity=".14"/></filter>
+          </defs>
+          <g class="t4-float">
+            <polygon class="back" points="180,62 46,268 314,268" transform="rotate(-6 180 200)"/>
+            <polygon class="fill" points="180,52 40,264 320,264" filter="url(#t4shadow)"/>
+            <polygon class="edge" points="180,52 40,264 320,264"/>
+            <circle class="glow" cx="180" cy="190" r="70"/>
+            <circle class="dot-ring" cx="180" cy="190" r="12"/>
+            <circle class="dot" cx="180" cy="190" r="6"/>
+            <text class="mid" x="180" y="224" text-anchor="middle">Равновесие</text>
+            <g class="vx soul" data-s="soul" role="button" tabindex="0" aria-label="Душа"><circle class="halo" cx="180" cy="52" r="26"/><circle class="pt" cx="180" cy="52" r="13"/><text x="180" y="26" text-anchor="middle">Душа</text><circle class="hit" cx="180" cy="52" r="42"/></g>
+            <g class="vx body" data-s="body" role="button" tabindex="0" aria-label="Тело"><circle class="halo" cx="40" cy="264" r="26"/><circle class="pt" cx="40" cy="264" r="13"/><text x="40" y="302" text-anchor="middle">Тело</text><circle class="hit" cx="40" cy="264" r="42"/></g>
+            <g class="vx mind" data-s="mind" role="button" tabindex="0" aria-label="Ум"><circle class="halo" cx="320" cy="264" r="26"/><circle class="pt" cx="320" cy="264" r="13"/><text x="320" y="302" text-anchor="middle">Ум</text><circle class="hit" cx="320" cy="264" r="42"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="sph-kicker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5a2 2 0 1 1 4 0v6"/><path d="M13 10a2 2 0 1 1 4 0v2"/><path d="M17 12a2 2 0 1 1 4 0v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-5-2.6L4.4 15a1.9 1.9 0 0 1 2.9-2.4L9 14.5"/></svg>Выберите сферу, карточки сменятся</div>
+      <div class="sph" role="tablist" aria-label="Сферы программы">
+        <button type="button" class="body" data-s="body" role="tab"><i></i><span><b>Тело</b><small>питание, процедуры, движение</small></span><em>7</em></button>
+        <button type="button" class="mind" data-s="mind" role="tab"><i></i><span><b>Ум</b><small>ритм дня, отдых, тишина</small></span><em>6</em></button>
+        <button type="button" class="soul" data-s="soul" role="tab"><i></i><span><b>Душа</b><small>медитация и беседы</small></span><em>3</em></button>
+      </div>
+      <div class="deck-stage">
+        <div class="shelf" aria-hidden="true">
+          <div class="shape contours deckpat" style="left:-180px;top:-120px"></div>
+          <div class="shape contours small deckpat" style="right:-100px;top:-40px"></div>
+          <div class="shape contours small deckpat" style="left:40%;top:120px;width:300px;height:300px"></div>
+        </div>
+        <button type="button" class="arrow prev" aria-label="Предыдущая карточка"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" class="arrow next" aria-label="Следующая карточка"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+        <article class="dcard body" tabindex="0" data-i="0">
+          <div class="in">
+          <div class="pic"><img src="img/monk-veg.webp" alt="Монах центра с овощами" loading="lazy"></div>
+          <div class="txt"><span class="when body">Тело · питание</span><h3>Детокс-питание</h3><p class="sub">Три приёма в день, меню одно для всех.</p><p class="more"><span>Меню для детокса разработал нутрициолог и натуропат <span class="tbd">имя</span>, а готовит команда поваров нашего центра.</span></p><div class="who"><span class="doc">Нутрициолог</span><span>Кухня</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="1">
+          <div class="in">
+          <div class="pic"><img src="img/stock-massage.webp" alt="Массаж спины, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
+          <div class="txt"><span class="when body">Тело · процедура</span><h3>Массажи</h3><p class="sub">Аюрведические, с маслами и травами.</p><p class="more"><span>Массаж разных зон тела по рекомендации врача. <span class="tbd">список массажей</span>. Снимают напряжение и помогают телу очищаться.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="2">
+          <div class="in">
+          <div class="pic"><img src="img/stock-mud.webp" alt="Нанесение грязи на спину, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
+          <div class="txt"><span class="when body">Тело · процедура</span><h3>Грязевые ванны</h3><p class="sub">С аюрведической глиной.</p><p class="more"><span>Очищают тело, балансируют первоэлементы, успокаивают ум. Подбирает наш врач по вашей конституции и дошам.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="3">
+          <div class="in">
+          <div class="pic"><img src="img/stock-steam.webp" alt="Пар над камнями в парной, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
+          <div class="txt"><span class="when body">Тело · процедура</span><h3>Сведана</h3><p class="sub">Паровая баня с травами.</p><p class="more"><span>Прогрев паром в фитобочке, голова снаружи. Улучшает кожу и дыхание, даёт общий детокс-эффект и хорошо расслабляет.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="4">
+          <div class="in">
+          <div class="pic"><img src="img/stock-sun.webp" alt="Человек отдыхает в шезлонге на солнце, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
+          <div class="txt"><span class="when body">Тело · процедура</span><h3>Солнечные ванны</h3><p class="sub">Мягкое солнце утром и вечером.</p><p class="more"><span>Неспешные прогулки, пока солнце мягко греет и восполняет витамин D. Специалист подскажет, какие зоны прогревать вам.</span></p><div class="who"><span class="doc">Специалист</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="5">
+          <div class="in">
+          <div class="pic"><img src="img/yoga-hall.webp" alt="Йога в зале центра, октябрьский ретрит" loading="lazy"></div>
+          <div class="txt"><span class="when body">Тело · утро</span><h3>Йога-асаны</h3><p class="sub">Каждый день и личный комплекс.</p><p class="more"><span>Мягкое движение вернёт телу лёгкость. Инструктор составит мини-комплекс под ваше здоровье, чтобы заниматься и дома.</span></p><div class="who"><span>Марина</span></div></div>
+          </div>
+        </article>
+        <article class="dcard body" tabindex="0" data-i="6">
+          <div class="in">
+          <div class="pic"><img src="img/practice.webp" alt="Занятие в зале центра" loading="lazy"></div>
+          <div class="txt"><span class="when body">Тело · утро</span><h3>Динамичные практики йоги</h3><p class="sub">Нагрузка прямо на коврике.</p><p class="more"><span>Уникальные практики йоги дают телу аэробную нагрузку и не требуют серьёзной подготовки.</span></p><div class="who"><span>Инструктор</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="6">
+          <div class="in">
+          <div class="pic"><img src="img/walk.webp" alt="Гости идут по тропе к холмам у центра" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Прогулки по холмам</h3><p class="sub">Тишина, скалы, рисовые поля, закат.</p><p class="more"><span>Прогулки в тишине по территории и холмам. Это тоже часть программы: ум отдыхает так же, как тело.</span></p><div class="who"><span>Команда</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="7">
+          <div class="in">
+          <div class="pic"><img src="img/lecture-group.webp" alt="Участники слушают лекцию в зале центра" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Лекции о здоровье</h3><p class="sub">Здоровье и йогический образ жизни.</p><p class="more"><span>Йогические монахи о простых, но действенных привычках, которые сделают жизнь ярче и здоровее.</span></p><div class="who"><span>Монахи</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="8">
+          <div class="in">
+          <div class="pic"><img src="img/hill-sunset.webp" alt="Закат над холмами без экранов" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · по желанию</span><h3>Цифровой отдых</h3><p class="sub">Меньше экрана, связь с домом остаётся.</p><p class="more"><span>Редкая возможность не начинать день с новостей и срочных сообщений и отвыкнуть от долгого скроллинга.</span></p><div class="who"><span>По желанию</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="9">
+          <div class="in">
+          <div class="pic"><img src="img/candles.webp" alt="Свечи на закате у центра" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · каждый день</span><h3>Личный дневник</h3><p class="sub">Мысли, инсайты, перемены.</p><p class="more"><span>Когда ум расслаблен, приходят самые нужные и точные идеи. Тетрадь даём, увозите с собой.</span></p><div class="who"><span>Тетрадь даём</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="10">
+          <div class="in">
+          <div class="pic"><img src="img/rock-group.webp" alt="Группа гостей на скалах" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Тёплый круг</h3><p class="sub">Люди, приехавшие за тем же.</p><p class="more"><span>Общие завтраки, вечерние разговоры, прогулки вместе.</span></p><div class="who"><span>Команда</span></div></div>
+          </div>
+        </article>
+        <article class="dcard mind" tabindex="0" data-i="11">
+          <div class="in">
+          <div class="pic"><img src="img/shavasana.webp" alt="Шавасана в зале центра, октябрьский ретрит" loading="lazy"></div>
+          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Глубокое расслабление</h3><p class="sub">Йога-нидра, шавасана, тратака.</p><p class="more"><span>На классах релаксации вы следуете за голосом инструктора и расслабляетесь глубже, чем во сне.</span></p><div class="who"><span>Инструктор</span></div></div>
+          </div>
+        </article>
+        <article class="dcard soul" tabindex="0" data-i="11">
+          <div class="in">
+          <div class="pic"><img src="img/kirtan-monks.webp" alt="Медитация в молчании в зале с монахами" loading="lazy"></div>
+          <div class="txt"><span class="when soul">Душа · 6:00 и 18:00</span><h3>Медитация в молчании</h3><p class="sub">Начало и конец дня наедине с собой.</p><p class="more"><span>Время познакомиться с настоящим собой. Технике с нуля обучают йога-монахи, групповые сессии каждый день.</span></p><div class="who"><span>Монахи</span></div></div>
+          </div>
+        </article>
+        <article class="dcard soul" tabindex="0" data-i="12">
+          <div class="in">
+          <div class="pic"><img src="img/kirtan.webp" alt="Киртан в зале центра" loading="lazy"></div>
+          <div class="txt"><span class="when soul">Душа · перед медитацией</span><h3>Медитация в движении</h3><p class="sub">Киртан, мантра-пение.</p><p class="more"><span>Погружает в медитативное состояние, успокаивает ум и тело и настраивает психику на конструктивный лад.</span></p><div class="who"><span>Монахи</span></div></div>
+          </div>
+        </article>
+        <article class="dcard soul" tabindex="0" data-i="13">
+          <div class="in">
+          <div class="pic"><img src="img/meditation-group.webp" alt="Беседа с монахами в зале" loading="lazy"></div>
+          <div class="txt"><span class="when soul">Душа · вечер</span><h3>Беседы о медитации</h3><p class="sub">Разговоры о развитии души.</p><p class="more"><span>Как встроить медитативную практику в повседневную жизнь. Простым языком, можно задавать вопросы.</span></p><div class="who"><span>Монахи</span></div></div>
+          </div>
+        </article>
+      </div>
+      <div class="deck-nav"><span class="cnt">Тело · 1 / 7</span><span class="hint"><span class="hd">наведите на карточку, чтобы прочитать подробнее</span><span class="hm">листайте стрелками</span></span></div>
+    </div>
+<script>
+(function(){
+  var root=document.getElementById('deck'); if(!root) return;
+  var stage=root.querySelector('.deck-stage'), cards=[].slice.call(root.querySelectorAll('.dcard')), cnt=root.querySelector('.cnt'), sph=[].slice.call(root.querySelectorAll('.sph button')), vxs=[].slice.call(root.querySelectorAll('.tri4 .vx'));
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ORDER=['body','mind','soul'], NAME={body:'Тело',mind:'Ум',soul:'Душа'}, cur='body', set=[], act=0, m=0, PX=150, STEP=4, timer=null, used=false, busy=false;
+  var CW=230, CH=384, MARG=120;
+  function fit(){ var W=stage.clientWidth||1200; stage.classList.toggle('few',m<=3); stage.classList.toggle('compact',m>=6&&W<1320); CW=m<=3?300:(m>=6&&W<1320)?200:230; CH=m<=3?460:(m>=6&&W<1320)?356:384; MARG=m<=3?160:(W<1320?160:120); PX=m<=1?0:m<=3?Math.min(340,(W-CW-MARG)/(m-1)):Math.min(205,(W-CW-MARG)/(m-1)); STEP=Math.asin(Math.min(.9,PX/(CH*12)))*180/Math.PI; }
+  function lay(){
+    var W=stage.clientWidth||1200, avail=W-MARG, R=CH*12;
+    var offL=act>0?1:0, offR=act<m-1?1:0, nG=offL+offR, want=Math.max(0,CW-PX+32);
+    var PXe=m>1?Math.max(PX*.8,Math.min(PX,(avail-CW-nG*want)/(m-1))):0;
+    var G=m>1?Math.max(0,Math.min(want,(avail-CW-(m-1)*PXe)/Math.max(1,nG))):0;
+    var span=(m-1)*PXe+offL*G+offR*G;
+    set.forEach(function(c,j){ var x=j*PXe+(j>=act?offL*G:0)+(j>act?offR*G:0)-span/2, on=j===act;
+      var ang=Math.asin(Math.max(-.9,Math.min(.9,x/R)))*180/Math.PI;
+      c.style.setProperty('--lift',on?'-26px':'0px'); c.style.transform='rotate('+ang.toFixed(3)+'deg) translateY(calc(var(--lift,0px) + var(--dy,0px)))';
+      c.style.setProperty('--z',String(100+j));
+      c.style.opacity='1'; c.style.pointerEvents=''; c.classList.toggle('on',on); });
+    cnt.textContent=NAME[cur]+' · '+(act+1)+' / '+m;
+  }
+  function deal(){ set.forEach(function(c){ c.classList.add('jump'); }); lay(); void stage.offsetWidth; set.forEach(function(c){ c.classList.remove('jump'); }); }
+  function pick(sp,j){ if(busy) return; busy=true; var same=(sp===cur); cur=sp; act=j||0;
+    sph.forEach(function(b){ b.classList.toggle('on',b.dataset.s===sp); b.setAttribute('aria-selected',b.dataset.s===sp?'true':'false'); }); vxs.forEach(function(g){ g.classList.toggle('on',g.dataset.s===sp); }); ORDER.forEach(function(o){ stage.classList.toggle(o,o===sp); });
+    if(same){ lay(); busy=false; return; }
+    var old=set, T=reduce?0:340;
+    if(!reduce){ old.forEach(function(c,j){ c.style.setProperty('--d',(j*30)+'ms'); c.classList.remove('on'); c.classList.add('out'); }); }
+    setTimeout(function(){
+      old.forEach(function(c){ c.classList.remove('out'); c.style.setProperty('--d','0s'); });
+      set=cards.filter(function(c){ return c.classList.contains(sp); }); m=set.length; cards.forEach(function(c){ c.classList.toggle('off',set.indexOf(c)<0); c.classList.remove('on'); }); fit();
+      if(reduce){ lay(); busy=false; return; }
+      set.forEach(function(c){ c.classList.add('jump','pre'); }); lay(); void stage.offsetWidth;
+      set.forEach(function(c,j){ c.classList.remove('jump'); c.style.setProperty('--d',(Math.abs(j-act)*55)+'ms'); c.classList.remove('pre'); });
+      busy=false;
+      setTimeout(function(){ set.forEach(function(c){ c.style.setProperty('--d','0s'); }); }, 55*m+650);
+    }, T);
+  }
+  function step(d){ var a=act+d; if(a>=m||a<0){ var i=(ORDER.indexOf(cur)+(d>0?1:ORDER.length-1))%ORDER.length; var sp=ORDER[i]; var mm=cards.filter(function(c){return c.classList.contains(sp);}).length; pick(sp,d>0?0:mm-1); } else { act=a; lay(); } }
+  function start(){ if(reduce||timer||used) return; timer=setInterval(function(){ step(1); },5000); }
+  function stop(){ clearInterval(timer); timer=null; }
+  sph.forEach(function(b){ b.addEventListener('click',function(){ used=true; stop(); pick(b.dataset.s,0); }); });
+  vxs.forEach(function(g){ g.addEventListener('click',function(){ used=true; stop(); pick(g.dataset.s,0); }); g.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); used=true; stop(); pick(g.dataset.s,0); } }); });
+  var hoverOK=window.matchMedia&&window.matchMedia('(hover: hover) and (pointer: fine)').matches, hT=null;
+  cards.forEach(function(c){
+    if(hoverOK){
+      c.addEventListener('pointerenter',function(){ var j=set.indexOf(c); if(j>=0&&j!==act){ used=true; stop(); act=j; lay(); } });
+      c.addEventListener('pointerleave',function(){ clearTimeout(hT); });
+    }
+    c.addEventListener('click',function(){ used=true; stop(); var j=set.indexOf(c); if(j>=0){ act=j; lay(); } });
+    c.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); c.click(); } });
+  });
+  root.querySelector('.prev').addEventListener('click',function(){ used=true; stop(); step(-1); });
+  root.querySelector('.next').addEventListener('click',function(){ used=true; stop(); step(1); });
+  root.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'){ used=true; stop(); step(1); } if(e.key==='ArrowLeft'){ used=true; stop(); step(-1); } });
+  root.addEventListener('mouseenter',stop); root.addEventListener('mouseleave',start);
+  set=cards.filter(function(c){ return c.classList.contains('body'); }); m=set.length; cards.forEach(function(c){ c.classList.toggle('off',set.indexOf(c)<0); });
+  sph[0].classList.add('on'); sph[0].setAttribute('aria-selected','true'); if(vxs[0]) vxs[0].classList.add('on'); stage.classList.add('body'); fit(); lay();
+  window.addEventListener('resize',function(){ fit(); lay(); });
+  if('IntersectionObserver' in window){ new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting) start(); else stop(); }); },{threshold:.3}).observe(root); } else start();
+})();
+</script>
+</section>
+
+<!-- 6b. Экскурсионные дни (v72: сразу после программы) -->
+<section class="band" id="exit">
+  <div class="shape contours" style="right:-280px;top:-140px" data-px="0.1"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Экскурсионные разгрузочные дни 8–10 марта</h2>
+      <p class="why">Три дня, чтобы плавно вернуться в привычный ритм жизни и не растерять баланс, который вы нащупали. Питание станет плотнее, но останется здоровым и лёгким. Больше прогулок, походы в горы, поездки по штату и знакомство с достопримечательностями, а медитации каждый день. Не мчаться в аэропорт, а спокойно завершить детокс и увезти с собой всё ценное.</p>
+    </div>
+    <div class="excur">
+      <div data-px="0.04"><img src="img/temple-forest.webp" alt="Храм на холме среди леса" loading="lazy"><h4>Места духовного наследия</h4><p>Старинные храмы и места силы вокруг Джамалпура</p></div>
+      <div data-px="-0.05"><img src="img/church.webp" alt="Старая церковь в Джамалпуре" loading="lazy"><h4>Архитектура британской Индии</h4><p>Старый Джамалпур и Мунгер</p></div>
+      <div data-px="0.06"><img src="img/ganga.webp" alt="Река Ганга" loading="lazy"><h4>Река Ганга</h4><p>Берег Ганги на рассвете, лодка</p></div>
+      <div data-px="-0.03"><img src="img/red-cliff-people.webp" alt="Группа у красных скал" loading="lazy"><h4>Прогулки по горам</h4><p>Холмы Джамалпура, виды на долину</p></div>
+    </div>
+    <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M15 7l5 5-5 5"/></svg>Листайте вбок</p>
+    <div class="exit exdays">
+      <div class="box"><h3>Сколько стоят эти дни</h3><p>Цена зависит от комнаты. Сумма для вашей комнаты считается прямо в её карточке в блоке «Стоимость и размещение»: поставьте галочку «Добавить 3 экскурсионных дня». Решить можно и позже, уже после брони.</p><a class="btn outline" href="#price">Смотреть цены</a></div>
+      <div class="box alt"><h3>Что входит в стоимость</h3><ul>
+        <li>Размещение в том же номере, где вы жили на детоксе</li>
+        <li>Трёхразовое питание</li>
+        <li>Медитации 2 раза в день</li>
+        <li>Поездки по всей экскурсионной программе, по штату на машинах</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Место и жильё -->
+<section class="band white" id="place">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Место и размещение</h2>
+      <p class="why">«Ананда Самбхути» — международный духовный центр в штате Бихар. Он находится за городом, в долине, окружённой холмами. Вокруг рисовые поля, баньяновые деревья и множество мест для медитации.</p>
+    </div>
+    <div class="mosaic">
+      <img class="m1" src="img/aerial-sunrise.webp" alt="Рассвет над центром, вид с высоты" loading="lazy">
+      <img class="m2" src="img/building-green.webp" alt="Главный дом центра летом" loading="lazy">
+      <img class="m3" src="img/valley.webp" alt="Долина и холмы Джамалпура" loading="lazy">
+      <img class="m4" src="img/monk-garden.webp" alt="Монах в саду центра на закате" loading="lazy">
+      <img class="m5" src="img/aerial-rice.webp" alt="Рисовые поля и холм у центра" loading="lazy">
+    </div>
+    <div class="place">
+      <div class="desc">
+        <p>Центр с самого первого камня строился как место для физического и духовного оздоровления гостей со всего мира.</p>
+        <p class="quiet">Здесь родился Шри Шри Анандамурти, духовный учитель, чьи идеи лежат в основе центра.</p>
+      </div>
+      <ul class="pnotes">
+        <li><span><b>Вегетарианская кухня</b>Повара готовят традиционную пищу и адаптируют остроту для гостей из других стран.</span></li>
+        <li><span><b>Место, пропитанное медитацией</b>В Бихаре медитировали многие учителя древности, это ощущается до сих пор.</span></li>
+      </ul>
+    </div>
+    <div class="pnums">
+      <div><b>135 акров</b><span>территории: безопасность, спокойствие и тишина</span></div>
+      <div><b>1000 гостей</b><span>в год на наших программах</span></div>
+      <div><b>с 2017</b><span>года живёт духовный центр</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8b. Отзывы (v74: прямо перед ценой) -->
+<section class="band" id="reviews">
+  <div class="shape contours" style="left:-300px;bottom:-160px" data-px="0.1"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Отзывы участников наших ретритов</h2>
+    </div>
+    <div class="reviews">
+      <div class="review" data-px="0.03"><p class="q"><span class="tbd">Отзыв участницы октябрьского ретрита, 2–3 предложения</span></p><div class="who"><i></i><span><span class="tbd">Имя, город</span></span></div></div>
+      <div class="review" data-px="-0.04"><p class="q"><span class="tbd">Отзыв, лучше с коротким видео</span></p><div class="who"><i></i><span><span class="tbd">Имя, город</span></span></div></div>
+      <div class="review" data-px="0.05"><p class="q"><span class="tbd">Отзыв</span></p><div class="who"><i></i><span><span class="tbd">Имя, город</span></span></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Цена и что входит -->
+<section class="band cream" id="price">
+  <div class="shape contours" style="left:-320px;top:-200px" data-px="0.08"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Стоимость и размещение</h2>
+      <p class="why">Цена зависит только от комнаты. Программа, питание и сопровождение специалистов одинаковы для всех.</p>
+    </div>
+    <ul class="pcommon" aria-label="Для всех гостей">
+      <li class="t">Для всех гостей</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.500c3 3.800 5.500 6.700 5.500 9.900a5.500 5.500 0 0 1-11 0c0-3.200 2.500-6.100 5.500-9.900z"/><path d="M9.300 13.800a2.800 2.800 0 0 0 2.300 2.600"/></svg>Горячий душ</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.800 9.800a12 12 0 0 1 16.400 0M6.900 13.100a7.600 7.600 0 0 1 10.200 0M9.900 16.300a3.200 3.200 0 0 1 4.200 0"/><circle cx="12" cy="19.300" r=".9" fill="currentColor" stroke="none"/></svg>Стабильный Wi-Fi</li>
+    </ul>
+    <div class="pcards">
+      <article class="pcard" data-p7="690" data-e7="621" data-p10="880" data-e10="790" data-r7="55900" data-re7="50300" data-r10="71300" data-re10="64200">
+        <div class="pg">
+          <div class="pg-track" tabindex="0" role="group" aria-label="Фото: Стандарт. Листайте стрелками"><figure><img src="img/rooms/std-1.webp" alt="Комната Стандарт: три кровати и ковёр" loading="lazy" draggable="false"><figcaption>Комната на троих</figcaption></figure><figure><img src="img/rooms/std-2.webp" alt="Комната Стандарт: три кровати, шкаф и стол" loading="lazy" draggable="false"><figcaption>Шкаф и стол в номере</figcaption></figure><figure><img src="img/rooms/std-3.webp" alt="Комната Стандарт: кровати у окна" loading="lazy" draggable="false"><figcaption>Свет и окно во всю стену</figcaption></figure><figure><img src="img/rooms/std-4.webp" alt="Галерея у номеров с видом на холмы" loading="lazy" draggable="false"><figcaption>Галерея у номеров</figcaption></figure></div>
+          <button type="button" class="pg-a prev" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.500 5.500 8 12l6.500 6.500"/></svg></button>
+          <button type="button" class="pg-a next" aria-label="Следующее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.500 5.500 16 12l-6.500 6.500"/></svg></button>
+          <div class="ttl"><h3>Стандарт</h3><p>Баланс комфорта и общения: рядом другие участники</p></div>
+          <div class="pg-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+        <ul class="strip"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.4 3-5.2 6-5.2s5.4 1.800 6 5.200"/><circle cx="17" cy="9" r="2.4"/><path d="M17.200 13.800c2.100.2 3.500 1.700 3.900 4.200"/></svg><span><span>3 человека<br>в номере</span></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-8m0 5h18v3m0-3v-2.200a2.800 2.800 0 0 0-2.800-2.800H11v5"/><circle cx="7" cy="11.800" r="1.700"/></svg><span><span>3 кровати<br>односпальные</span></span></li><li class="shared"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V8a4 4 0 0 1 8 0v2"/><path d="M8.500 13a4.500 3.500 0 0 1 9 0z"/><path d="M10.500 16v1.500M13 16v3M15.500 16v1.500"/></svg><span><span><b>Душ и туалет</b><br>общие, на этаже</span></span></li></ul>
+        <div class="tear"><i></i><p class="eb"><svg class="star4" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.5 4.600 3.400 7.500 8 8-4.600.5-7.500 3.400-8 8-.5-4.600-3.400-7.500-8-8 4.600-.5 7.500-3.400 8-8z"/></svg><span>Early Birds −10%</span><small>до 15 декабря</small></p><i></i></div>
+        <div class="pr">
+          <div class="one"><p class="lb"><span data-l>7 дней детокса</span><small><span data-s>1–7 марта</span><span class="dot"> · </span><span class="ppn">за человека</span></small></p><p class="am" aria-live="polite"><s><span class="vh">обычная цена </span><span data-o>$690</span></s><b data-n>$621</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span><span data-r>50 300 ₽</span></small></p></div>
+          <p class="inc"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg><span><b>В цену входит:</b> проживание, питание, процедуры, йога и медитации</span></p>
+          <label class="add"><input type="checkbox" id="add-std"><span class="chk"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg></span><span class="tx">Добавить 3 экскурсионных дня<small>8–10 марта</small></span><b data-a>+ $169</b></label>
+          <p class="later">Не решили? Эти дни можно добавить и позже, уже после брони.</p>
+          <div class="prepay"><p><b>Предоплата онлайн сейчас</b><small>остальное по приезде</small></p><p class="pv"><b>$200</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span>17 000 ₽</small></p></div>
+        </div>
+        <div class="pa"><a class="btn" href="#apply" data-room="Стандарт, 7 дней" data-name="Стандарт" data-btn="Выбрать Стандарт">Выбрать Стандарт</a></div>
+      </article>
+      <article class="pcard" data-p7="1190" data-e7="1071" data-p10="1570" data-e10="1410" data-r7="96900" data-re7="87200" data-r10="127800" data-re10="115000">
+        <div class="pg">
+          <div class="pg-track" tabindex="0" role="group" aria-label="Фото: Премиум двухместный. Листайте стрелками"><figure><img src="img/rooms/dbl-1.webp" alt="Комната Премиум двухместный: рабочий стол у окна" loading="lazy" draggable="false"><figcaption>Комната на двоих</figcaption></figure><figure><img src="img/rooms/dbl-2.webp" alt="Комната Премиум двухместный: две кровати и торшер" loading="lazy" draggable="false"><figcaption>Две отдельные кровати</figcaption></figure><figure><img src="img/rooms/dbl-3.webp" alt="Комната Премиум двухместный: вид от входа" loading="lazy" draggable="false"><figcaption>Просторный номер</figcaption></figure><figure><img src="img/rooms/dbl-4.webp" alt="Душ и туалет в номере Премиум" loading="lazy" draggable="false"><figcaption>Свои душ и туалет</figcaption></figure></div>
+          <button type="button" class="pg-a prev" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.500 5.500 8 12l6.500 6.500"/></svg></button>
+          <button type="button" class="pg-a next" aria-label="Следующее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.500 5.500 16 12l-6.500 6.500"/></svg></button>
+          <div class="ttl"><h3>Премиум двухместный</h3><p>Своё пространство и близкий человек рядом: для пары или двоих друзей</p></div>
+          <div class="pg-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+        <ul class="strip"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.4 3-5.2 6-5.2s5.4 1.800 6 5.200"/><circle cx="17" cy="9" r="2.4"/><path d="M17.200 13.800c2.100.2 3.500 1.700 3.900 4.200"/></svg><span><span>2 человека<br>в номере</span></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-8m0 5h18v3m0-3v-2.200a2.800 2.800 0 0 0-2.800-2.800H11v5"/><circle cx="7" cy="11.800" r="1.700"/></svg><span><span>2 кровати<br>односпальные</span></span></li><li class="own"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V8a4 4 0 0 1 8 0v2"/><path d="M8.500 13a4.500 3.500 0 0 1 9 0z"/><path d="M10.500 16v1.500M13 16v3M15.500 16v1.500"/></svg><span><span><b>Свои душ<br>и туалет</b></span></span></li></ul>
+        <div class="tear"><i></i><p class="eb"><svg class="star4" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.5 4.600 3.400 7.500 8 8-4.600.5-7.500 3.400-8 8-.5-4.600-3.400-7.500-8-8 4.600-.5 7.500-3.400 8-8z"/></svg><span>Early Birds −10%</span><small>до 15 декабря</small></p><i></i></div>
+        <div class="pr">
+          <div class="one"><p class="lb"><span data-l>7 дней детокса</span><small><span data-s>1–7 марта</span><span class="dot"> · </span><span class="ppn">за человека</span></small></p><p class="am" aria-live="polite"><s><span class="vh">обычная цена </span><span data-o>$1 190</span></s><b data-n>$1 071</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span><span data-r>87 200 ₽</span></small></p></div>
+          <p class="inc"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg><span><b>В цену входит:</b> проживание, питание, процедуры, йога и медитации</span></p>
+          <label class="add"><input type="checkbox" id="add-dbl"><span class="chk"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg></span><span class="tx">Добавить 3 экскурсионных дня<small>8–10 марта</small></span><b data-a>+ $339</b></label>
+          <p class="later">Не решили? Эти дни можно добавить и позже, уже после брони.</p>
+          <div class="prepay"><p><b>Предоплата онлайн сейчас</b><small>остальное по приезде</small></p><p class="pv"><b>$350</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span>29 000 ₽</small></p></div>
+        </div>
+        <div class="pa"><a class="btn" href="#apply" data-room="Премиум двухместный, 7 дней" data-name="Премиум двухместный" data-btn="Выбрать двухместный">Выбрать двухместный</a></div>
+      </article>
+      <article class="pcard" data-p7="1590" data-e7="1431" data-p10="2110" data-e10="1900" data-r7="128900" data-re7="116000" data-r10="170800" data-re10="153700">
+        <div class="pg">
+          <div class="pg-track" tabindex="0" role="group" aria-label="Фото: Премиум одноместный. Листайте стрелками"><figure><img src="img/rooms/sgl-1.webp" alt="Комната Премиум одноместный: кровать и рабочий стол" loading="lazy" draggable="false"><figcaption>Комната для одного</figcaption></figure><figure><img src="img/rooms/sgl-2.webp" alt="Комната Премиум одноместный: кровать, шкаф и стол" loading="lazy" draggable="false"><figcaption>Шкаф и письменный стол</figcaption></figure><figure><img src="img/rooms/sgl-3.webp" alt="Комната Премиум одноместный: окно во всю стену" loading="lazy" draggable="false"><figcaption>Много света</figcaption></figure><figure><img src="img/rooms/sgl-4.webp" alt="Душ и туалет в номере Премиум" loading="lazy" draggable="false"><figcaption>Свои душ и туалет</figcaption></figure></div>
+          <button type="button" class="pg-a prev" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.500 5.500 8 12l6.500 6.500"/></svg></button>
+          <button type="button" class="pg-a next" aria-label="Следующее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.500 5.500 16 12l-6.500 6.500"/></svg></button>
+          <div class="ttl"><h3>Премиум одноместный</h3><p>Полное уединение и глубокое погружение в себя</p></div>
+          <div class="pg-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+        <ul class="strip"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.4"/><path d="M5.500 19.500c.7-3.700 3.200-5.700 6.500-5.700s5.800 2 6.500 5.700"/></svg><span><span>Только вы<br>в номере</span></span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-8m0 5h18v3m0-3v-2.200a2.800 2.800 0 0 0-2.800-2.800H11v5"/><circle cx="7" cy="11.800" r="1.700"/></svg><span><span>Своя<br>кровать</span></span></li><li class="own"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V8a4 4 0 0 1 8 0v2"/><path d="M8.500 13a4.500 3.500 0 0 1 9 0z"/><path d="M10.500 16v1.500M13 16v3M15.500 16v1.500"/></svg><span><span><b>Свои душ<br>и туалет</b></span></span></li></ul>
+        <div class="tear"><i></i><p class="eb"><svg class="star4" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.5 4.600 3.400 7.500 8 8-4.600.5-7.500 3.400-8 8-.5-4.600-3.400-7.500-8-8 4.600-.5 7.500-3.400 8-8z"/></svg><span>Early Birds −10%</span><small>до 15 декабря</small></p><i></i></div>
+        <div class="pr">
+          <div class="one"><p class="lb"><span data-l>7 дней детокса</span><small><span data-s>1–7 марта</span><span class="dot"> · </span><span class="ppn">за человека</span></small></p><p class="am" aria-live="polite"><s><span class="vh">обычная цена </span><span data-o>$1 590</span></s><b data-n>$1 431</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span><span data-r>116 000 ₽</span></small></p></div>
+          <p class="inc"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg><span><b>В цену входит:</b> проживание, питание, процедуры, йога и медитации</span></p>
+          <label class="add"><input type="checkbox" id="add-sgl"><span class="chk"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.500 6.500 12 13 4.500"/></svg></span><span class="tx">Добавить 3 экскурсионных дня<small>8–10 марта</small></span><b data-a>+ $469</b></label>
+          <p class="later">Не решили? Эти дни можно добавить и позже, уже после брони.</p>
+          <div class="prepay"><p><b>Предоплата онлайн сейчас</b><small>остальное по приезде</small></p><p class="pv"><b>$480</b><small><span class="vh">примерно </span><span aria-hidden="true">≈ </span>39 000 ₽</small></p></div>
+        </div>
+        <div class="pa"><a class="btn" href="#apply" data-room="Премиум одноместный, 7 дней" data-name="Премиум одноместный" data-btn="Выбрать одноместный">Выбрать одноместный</a></div>
+      </article>
+    </div>
+    <p class="pall">Цены в рублях приблизительные, зависят от курса.</p>
+    <div class="price2">
+      <div class="incl">
+        <div><h3>Входит в любой вариант</h3><ul class="yes">
+          <li>Размещение на 7 ночей (1–8 марта)</li>
+          <li>Трёхразовое детокс-питание</li>
+          <li>Индивидуальный протокол от врача аюрведы и все прописанные им процедуры</li>
+          <li>Медитации, лекции, асана-классы</li>
+          <li>Встреча в аэропорту Патны (сам трансфер оплачивается отдельно)</li>
+          <li>План подготовки к детоксу и индивидуальные рекомендации на дом</li>
+        </ul></div>
+        <div><h3>Не входит</h3><ul class="no">
+          <li>Перелёт и виза</li>
+          <li>Трансфер Патна — центр, <span class="tbd">цена</span></li>
+          <li>Экскурсионные дни 8–10 марта: по желанию, цена в карточке</li>
+        </ul></div>
+      </div>
+      <p class="pay-rule"><b>Как оплатить.</b> Предоплата фиксирует за вами стоимость на момент оплаты, её сумма указана в карточке комнаты. Остаток и трансфер оплачиваются на месте в рупиях по текущему курсу. Всю программу заранее можно оплатить только в долларах.<span class="eb-only"> Цена Early Birds (−10%) действует до 15 декабря.</span></p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  [].forEach.call(document.querySelectorAll('.pg'),function(g){
+    var tr=g.querySelector('.pg-track'), n=tr.children.length, dots=g.querySelectorAll('.pg-dots i'), cur=0, raf=0;
+    function mark(){ raf=0; var w=tr.clientWidth||1, i=Math.max(0,Math.min(n-1,Math.round(tr.scrollLeft/w))); if(i===cur) return; cur=i; for(var j=0;j<dots.length;j++) dots[j].classList.toggle('on',j===i); }
+    function go(i){ i=(i+n)%n; tr.scrollTo({left:i*tr.clientWidth,behavior:reduce?'auto':'smooth'}); }
+    g.querySelector('.prev').addEventListener('click',function(){ go(cur-1); });
+    g.querySelector('.next').addEventListener('click',function(){ go(cur+1); });
+    tr.addEventListener('scroll',function(){ if(!raf) raf=requestAnimationFrame(mark); },{passive:true});
+    tr.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'){ e.preventDefault(); go(cur+1); } else if(e.key==='ArrowLeft'){ e.preventDefault(); go(cur-1); } });
+  });
+  /* price: extra days by checkbox; Early Birds ends with 15 December 2026 (India time) */
+  var EB_END=Date.UTC(2026,11,15,18,30), sec=document.getElementById('price');
+  function usd(n){ return '$'+String(n).replace(/\B(?=(\d{3})+$)/g,' '); }
+  function rub(n){ return String(n).replace(/\B(?=(\d{3})+$)/g,' ')+' ₽'; }
+  function paint(c){ var eb=Date.now()<EB_END, ten=c.querySelector('.add input').checked, d=c.dataset, full=+(ten?d.p10:d.p7), now=eb?+(ten?d.e10:d.e7):full, add=eb?d.e10-d.e7:d.p10-d.p7, btn=c.querySelector('.pa .btn');
+    c.querySelector('[data-l]').textContent=ten?'10 дней: детокс и экскурсии, итого':'7 дней детокса'; c.querySelector('[data-s]').textContent=ten?'1–10 марта':'1–7 марта';
+    c.querySelector('[data-o]').textContent=usd(full); c.querySelector('[data-n]').textContent=usd(now); c.querySelector('[data-a]').textContent='+ '+usd(add);
+    c.querySelector('[data-r]').textContent=rub(eb?+(ten?d.re10:d.re7):+(ten?d.r10:d.r7));
+    btn.setAttribute('data-room',btn.getAttribute('data-name')+(ten?', 10 дней':', 7 дней')); btn.textContent=btn.getAttribute('data-btn')+(ten?' на 10 дней':''); }
+  if(sec){ if(Date.now()>=EB_END) sec.classList.add('noeb');
+    [].forEach.call(sec.querySelectorAll('.pcard'),function(c){ c.querySelector('.add input').addEventListener('change',function(){ paint(c); }); paint(c); }); }
+})();
+</script>
+
+<!-- 10. Как добраться -->
+<section class="band white" id="road">
+  <svg class="river" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 120 C 200 80 400 220 620 170 S 1000 30 1220 120 S 1400 260 1470 200"/>
+  </svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Как добраться: встречаем и ведём за руку</h2>
+    </div>
+    <div class="road">
+      <div>
+        <p class="road-big">Вы добираетесь до Патны, мы вас встречаем и доставляем на трансфере к месту программы.</p>
+        <ol class="legs">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span><div><b>Оформляете электронную визу</b><p>На официальном сайте правительства Индии, не раньше чем за месяц до поездки. Заполняете форму, и через несколько дней виза приходит на почту. Перед поездкой подскажем, какие ещё документы заполнить для въезда.</p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16l20-8-6 10-4-3-5 2 2-5-7-2z"/></svg></span><div><b>Ваш город → Дели</b><p>Прямые рейсы есть из Москвы, Алматы, Ташкента, Дубая и Стамбула, из других городов с одной пересадкой. Вы выбираете перелёт и покупаете билеты самостоятельно. <span class="tbd">или Калькутта</span></p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16l20-8-6 10-4-3-5 2 2-5-7-2z"/></svg></span><div><b>Дели → Патна</b><p>Внутренний перелёт около 2 часов. Рейс вы выбираете и покупаете самостоятельно. <span class="tbd">Деогар ближе?</span></p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14l2-5h14l2 5v4H3z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span><div><b>Патна → Ананда Самбхути</b><p>Встречаем в аэропорту с табличкой и везём в центр на машине, дорога 4–5 часов. Трансфер оплачивается отдельно, <span class="tbd">цена</span>.</p></div></li>
+        </ol>
+        <div class="we-do">
+          <h3>Мы всегда на связи</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><span>Куратор на связи в WhatsApp или Telegram с момента заявки до возвращения домой</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><span>Памятка «как добраться» и консультация по всем вопросам поездки</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><span>Встречаем в аэропорту и провожаем после программы</span></li>
+          </ul>
+          <p style="font-size:13px;color:var(--muted)">Куратор: <span class="tbd">имя, фото</span></p>
+        </div>
+      </div>
+      <div class="globe-wrap" id="globe-wrap">
+        <canvas id="globe" aria-label="Глобус: самолётом из вашего города в Дели, затем в Патну, дальше машиной до Ананда Самбхути" role="img"></canvas>
+        <div class="globe-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7M21 12a9 9 0 0 1-15 6.7"/><path d="M18 2v4h-4M6 22v-4h4"/></svg>Потяните, чтобы покрутить. Сам вернётся к маршруту</div>
+        <div class="lens" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><clipPath id="lensClip"><circle cx="100" cy="100" r="96"/></clipPath><path id="leg3" d="M44,104 Q 100,84 156,104"/></defs>
+            <circle class="disc" cx="100" cy="100" r="96"/>
+            <g clip-path="url(#lensClip)"><path class="river" d="M-10 130 C 50 100, 120 150, 215 95"/><use href="#leg3" class="road-line"/></g>
+            <circle class="city" cx="44" cy="104" r="6"/><text x="44" y="88" text-anchor="middle">Патна</text>
+            <circle class="city home" cx="156" cy="104" r="7"/><text x="156" y="88" text-anchor="middle">Центр</text>
+            <text class="cap" x="100" y="168" text-anchor="middle">Ганга · 4–5 ч на машине</text>
+            <g><animateMotion dur="5s" repeatCount="indefinite" rotate="auto" keyPoints="0;0;1;1" keyTimes="0;0.1;0.9;1" calcMode="linear"><mpath href="#leg3"/></animateMotion>
+              <g><rect x="-13" y="-7" width="26" height="12" rx="4" fill="#ff6123"/><rect x="-7" y="-12" width="12" height="7" rx="2" fill="#ff6123"/><circle cx="-7" cy="6" r="3" fill="#20281a"/><circle cx="7" cy="6" r="3" fill="#20281a"/></g></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- 12. Вопросы -->
+<section class="band cream" id="faq">
+  <div class="wrap">
+    <div class="faq-wrap">
+    <div class="sec-head"><h2>Вопросы</h2></div>
+    <div class="faq">
+      <div>
+        <details><summary>Это мой первый детокс. Подойдёт ли он мне?</summary><p>Да. Программа достаточно мягкая и хорошо подходит тем, кто впервые знакомится с детокс-программами.</p></details>
+        <details><summary>У меня ограничения по здоровью. Насколько детокс безопасен?</summary><p>Перед поездкой вы заполняете подробную анкету о здоровье, составленную нашими врачами, и честно указываете заболевания и самочувствие. Если мы увидим строгое противопоказание, сразу сообщим: при некоторых острых состояниях мы не можем взять вас на программу. Список противопоказаний есть выше, в блоке «Кому подойдёт». В начале программы главный врач осмотрит вас, сверит всё с анкетой, проведёт тесты и составит протокол с учётом всех ограничений.</p></details>
+        <details><summary>Нужна ли виза в Индию?</summary><p>Большинству гостей достаточно электронной визы. Её оформляют на официальном сайте правительства Индии не раньше чем за 30 дней до въезда: заполняете форму, и через несколько дней виза приходит на почту. Перед прилётом нужно заполнить электронную карту прибытия, ссылки пришлём. Координатор будет на связи и поможет с документами.</p></details>
+        <details><summary>Какая погода в марте в Индии?</summary><p>Март — один из лучших периодов: уже не холодно, но ещё не жарко. Днём +29…+32 °C, ночью около +22 °C.</p></details>
+        <details><summary>Как оплатить и где взять рупии?</summary><p>Чтобы закрепить за собой цену, нужно внести предоплату: её сумма указана в карточке комнаты. Остаток оплачивается на месте строго в рупиях. Если хотите оплатить всю сумму заранее, это можно сделать только в долларах. Подскажем, как поменять доллары на рупии по хорошему курсу: в аэропорту или у нашего доверенного сервиса.</p></details>
+        <details><summary>Можно ли приехать парой?</summary><p>Да, это отличный повод неспешно отдохнуть вместе с пользой для здоровья. Будет много времени для душевного контакта, который теряется в суете и быту. Для пар есть комфортные двухместные номера класса Премиум.</p></details>
+      </div>
+      <div>
+        <details><summary>А если задержат рейс?</summary><p>Наш координатор на связи с вами всю дорогу. Сообщите о задержке, и мы перенесём время трансфера, чтобы вы благополучно добрались от Патны до центра.</p></details>
+        <details><summary>Я лечу одна. Это безопасно?</summary><p>Да. По дороге вы всё время находитесь в аэропортах Дели и Патны, это безопасные места. В аэропорту Патны вас ждёт наш трансфер до самого центра. Если вы впервые в Индии, советуем лететь из Дели в Патну самолётом, так комфортнее всего. Территория центра закрыта, охрана круглосуточно, а экскурсии проходят под присмотром организаторов. Участники часто знакомятся ещё в аэропорту вылета и летят вместе.</p></details>
+        <details><summary>Нужны ли прививки?</summary><p>Прививки для въезда в Индию не обязательны.</p></details>
+        <details><summary>Можно ли вернуть предоплату?</summary><p>Предоплату можно вернуть не позднее чем за <span class="tbd">N дней</span> до старта программы. Если позже, вернём <span class="tbd">% суммы</span>.</p></details>
+        <details><summary>На каком языке программа?</summary><p>Программу ведут русскоязычные и англоязычные спикеры. На лекциях, беседах и консультациях на английском будет последовательный перевод или переводчик.</p></details>
+        <details><summary>Что взять с собой?</summary><p>Гигиенические принадлежности; личную аптечку с лекарствами, которые вы принимаете постоянно; привычную косметику, если пользуетесь определёнными марками; репеллент от комаров; сланцы; летнюю одежду. В центре живут монахи, поэтому просим выбирать одежду, закрывающую плечи, колени, декольте и живот. В натуральных тканях прохладно даже в закрытой одежде.</p></details>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<a class="wa-float" href="#apply" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3.3 4.4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.5 0 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4l-.5-.3-1.9-.9c-.3-.1-.5-.2-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.3z"/></svg><span>WhatsApp</span></a>
+<!-- 13. Заявка -->
+<section class="band" id="apply">
+  <svg class="river" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path class="p2" d="M700 880 C 820 850 940 800 1060 820 S 1300 870 1470 800"/>
+  </svg>
+  
+  <div class="shape contours" style="left:-300px;bottom:-220px" data-px="0.08"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Регистрация</span>
+      <h2>Хочу участвовать в йога-детоксе!</h2>
+    </div>
+    <div class="apply">
+      <form class="lead-form" id="lead-form" novalidate>
+        <div class="form-body" id="form-body">
+          <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" aria-describedby="e-name"><p class="err" id="e-name" hidden></p></div>
+          <div class="chan" role="group" aria-labelledby="l-chan">
+            <div class="field"><span class="lbl" id="l-chan">Как с вами связаться</span>
+              <div class="chips" role="radiogroup" aria-labelledby="l-chan">
+                <label><input type="radio" name="channel" value="whatsapp" checked><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.2 13.8l.8-2.9A5.8 5.8 0 1 1 5.2 13z"/><path d="M6 5.6c-.2 1 .3 2.2 1.3 3.1s2.1 1.5 3.1 1.3"/></svg>WhatsApp</span></label>
+                <label><input type="radio" name="channel" value="telegram"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 2.3L1.8 7.2l3.8 1.4M14 2.3l-2.2 10.9-6.2-4.6M14 2.3L5.6 8.6v3.8l2.1-2.2"/></svg>Telegram</span></label>
+                <label><input type="radio" name="channel" value="call"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h2.4l1.1 3-1.5 1a7.4 7.4 0 0 0 3.5 3.5l1-1.5 3 1.1V13a1 1 0 0 1-1.1 1A10.6 10.6 0 0 1 2 3.6 1 1 0 0 1 3 2.5z"/></svg>Звонок</span></label>
+                <label><input type="radio" name="channel" value="email"><span><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.8" y="3.3" width="12.4" height="9.4" rx="1.6"/><path d="M2.2 4.2L8 8.8l5.8-4.6"/></svg>Почта</span></label>
+              </div>
+            </div>
+            <div class="field"><input id="f-contact" name="contact" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00" aria-label="Номер WhatsApp" aria-describedby="e-contact"><p class="err" id="e-contact" hidden></p></div>
+          </div>
+          <p class="picked" id="f-picked" hidden><span>Комната: <b id="f-room"></b></span><button type="button" id="f-unpick">Убрать</button></p>
+          <details class="more" id="f-more">
+            <summary><span>Добавить вопрос<i>по желанию</i></span></summary>
+            <div class="more-in">
+              <div class="field"><textarea id="f-msg" name="message" rows="3" maxlength="1000" aria-label="Вопрос или комментарий" placeholder="Например: можно ли приехать на день раньше"></textarea></div>
+            </div>
+          </details>
+          <div class="agree">
+            <label class="check"><input type="checkbox" id="f-agree" name="consent" aria-describedby="e-agree"><span>Согласен(на) на обработку моих данных, чтобы координатор связался со мной по этой заявке. <span class="tbd">Ссылка на политику</span></span></label>
+            <p class="err" id="e-agree" hidden></p>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Не заполняйте это поле<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <p class="form-fail" id="form-fail" role="alert" hidden></p>
+          <div class="form-foot">
+            <button class="btn" type="submit" id="f-submit">Забронировать место</button>
+            <span class="cta-note">Пока не нужно платить. Мы свяжемся с вами в течение дня и ответим на все вопросы</span>
+          </div>
+        </div>
+        <div class="form-ok" id="form-ok" role="status" tabindex="-1" hidden>
+          <b>Заявка принята</b>
+          <span id="ok-text"></span>
+          <div class="ok-tg" id="ok-tg" hidden><span id="ok-tg-text"></span><a class="btn outline" id="ok-tg-link" target="_blank" rel="noopener">Открыть Telegram-бот</a></div>
+          <p class="draft-note" id="ok-draft" hidden>Это черновик страницы: заявка пока никуда не отправляется. В карточку Kommo уйдёт вот что:</p>
+          <dl class="ok-list" id="ok-list" hidden></dl>
+          <button type="button" class="linkbtn" id="ok-back" hidden>Вернуться к форме</button>
+        </div>
+      </form>
+      <div class="after">
+        <div class="quote"><p>«<span class="tbd">Короткий отзыв участницы октября</span>»</p><span><span class="tbd">Имя, город</span></span></div>
+        <ol>
+          <li><i>1</i><span>Координатор свяжется с вами в течение дня и ответит на все вопросы</span></li>
+          <li><i>2</i><span>Когда будете готовы, вносите предоплату по самой выгодной цене</span></li>
+          <li><i>3</i><span>Заполняете анкету о здоровье от наших врачей и готовитесь к поездке: выбираете летние наряды, оформляете визу и следуете нашей инструкции по подготовке к детоксу</span></li>
+        </ol>
+        <div class="alt"><span>Удобнее написать?</span><a class="btn outline" href="#apply">Написать в WhatsApp <span class="tbd">номер</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Ананда Самбхути</b>Духовный центр · Джамалпур, Бихар, Индия<br>anandasambhuti.org</div>
+    <div><b>Связаться</b>WhatsApp / Telegram <span class="tbd">номер</span><br>Почта <span class="tbd">адрес</span></div>
+    <div><b>Детокс 1–7 марта 2027</b>Оздоровительная детокс-программа духовного центра</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* v11: nested contour lines (hills on a map) drawn into every .shape.contours */
+  var cs=document.querySelectorAll('.shape.contours');
+  for(var c=0;c<cs.length;c++){
+    var n=cs[c].classList.contains('small')?7:11, out='', seed=[1.7+(c+1)*0.9,2.3+(c+1)*0.4,3.1,4.7]; /* +1 keeps the shapes of v55, where the first screen had one more */
+    for(var k=1;k<=n;k++){
+      var r=40+k*36, d='';
+      for(var i=0;i<=72;i++){
+        var a=i/72*Math.PI*2;
+        var rr=r*(1+0.16*Math.sin(a*2+seed[0])+0.09*Math.sin(a*3+seed[1])+0.05*Math.sin(a*5+seed[2])+0.03*Math.cos(a*7+seed[3]));
+        d+=(i?' L':'M')+(450+Math.cos(a)*rr).toFixed(1)+' '+(450+Math.sin(a)*rr*0.82).toFixed(1);
+      }
+      out+='<path d="'+d+' Z"/>';
+    }
+    cs[c].innerHTML='<svg viewBox="0 0 900 900" aria-hidden="true">'+out+'</svg>';
+  }
+  /* first screen: the same hill lines in both upper corners */
+  var hcs=document.querySelectorAll('.hero .hc'), ho='', hs=[1.7,2.3,3.1,4.7];
+  for(var q=1;q<=11;q++){ var hr=40+q*36, hd='';
+    for(var j=0;j<=72;j++){ var t=j/72*Math.PI*2;
+      var h2=hr*(1+0.16*Math.sin(t*2+hs[0])+0.09*Math.sin(t*3+hs[1])+0.05*Math.sin(t*5+hs[2])+0.03*Math.cos(t*7+hs[3]));
+      hd+=(j?' L':'M')+(450+Math.cos(t)*h2).toFixed(1)+' '+(450+Math.sin(t)*h2*0.82).toFixed(1); }
+    ho+='<path d="'+hd+' Z"/>'; }
+  for(var w=0;w<hcs.length;w++) hcs[w].innerHTML='<svg viewBox="0 0 900 900" aria-hidden="true">'+ho+'</svg>';
+})();
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var narrow = function(){ return window.innerWidth < 981; };
+
+  /* Parallax: every [data-px] drifts against the scroll by its own speed, measured from the viewport centre. */
+  var items = Array.prototype.slice.call(document.querySelectorAll('[data-px]')).map(function(el){ return {el:el, s:parseFloat(el.getAttribute('data-px'))||0}; });
+  var ticking=false;
+  function px(){
+    ticking=false;
+    if(reduce || narrow()) return;
+    var vh=window.innerHeight;
+    items.forEach(function(it){
+      var r=it.el.getBoundingClientRect();
+      if(r.bottom < -400 || r.top > vh+400) return;
+      var d=(r.top + r.height/2) - vh/2;          // distance from viewport centre
+      var y=-d*it.s;
+      it.el.style.transform = it.el.classList.contains('stamp') ? 'translate3d(0,'+y.toFixed(1)+'px,0) rotate(-8deg)' : 'translate3d(0,'+y.toFixed(1)+'px,0)';
+    });
+    sunAndPlane();
+  }
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(px); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+
+  /* Sun on the day arc and the plane on the route follow scroll progress of their own block. */
+  var hc=document.getElementById('heroCtrl'), hv=document.querySelector('.hero .disc video');
+  function heroPaused(p){ if(!hc) return; hc.setAttribute('data-paused',p?'1':'0'); hc.setAttribute('aria-pressed',p?'true':'false'); hc.setAttribute('aria-label',p?'Включить видео':'Поставить видео на паузу'); }
+  if(hv){
+    if(reduce){ heroPaused(true); } else { var pl=hv.play(); if(pl&&pl.catch) pl.catch(function(){ heroPaused(true); }); }
+    if(hc) hc.addEventListener('click',function(){ var he=hc.closest('.hero'); if(hv.paused){ var p2=hv.play(); if(p2&&p2.catch) p2.catch(function(){}); heroPaused(false); if(he) he.classList.remove('still'); } else { hv.pause(); heroPaused(true); if(he) he.classList.add('still'); } });
+  }
+  var sunpath=document.getElementById('sunpath'), sun=document.getElementById('sun');
+  var routepath=null, plane=null;
+  function progressOf(el){ var r=el.getBoundingClientRect(), vh=window.innerHeight; return Math.max(0,Math.min(1,(vh - r.top)/(vh + r.height))); }
+  function along(path, p){ var L=path.getTotalLength(); return path.getPointAtLength(L*p); }
+  function sunAndPlane(){
+    if(sunpath && sun){ var p=progressOf(sunpath); var pt=along(sunpath, 0.02+0.96*p); sun.setAttribute('cx',pt.x); sun.setAttribute('cy',pt.y); }
+    if(routepath && plane){ var q=progressOf(routepath); var pq=along(routepath, Math.min(1,q*1.15)); plane.setAttribute('transform','translate('+pq.x.toFixed(1)+' '+pq.y.toFixed(1)+')'); }
+  }
+  if(reduce){ if(sun){var e=along(sunpath,.5); sun.setAttribute('cx',e.x); sun.setAttribute('cy',e.y);} if(plane){var f=along(routepath,1); plane.setAttribute('transform','translate('+f.x+' '+f.y+')');} }
+  else { px(); }
+
+  var wa=document.querySelector('.wa-float'); if(wa){ var waT=function(){ wa.classList.toggle('show', window.scrollY>700); }; window.addEventListener('scroll',waT,{passive:true}); waT(); }
+  /* v61 form. LEAD_ENDPOINT = address of the handler that puts the lead into Kommo; while it is empty nothing is sent. */
+  var _c=window.ASJ_DETOX||{}, LEAD_ENDPOINT=_c.leadEndpoint||'', TG_BOT_URL=_c.tgBotUrl||'', WA_URL=_c.waUrl||'';
+  var f=document.getElementById('lead-form');
+  if(f){
+    var $=function(id){return document.getElementById(id);};
+    var body=$('form-body'), ok=$('form-ok'), btn=$('f-submit'), fail=$('form-fail'), contact=$('f-contact'), nameI=$('f-name'), agree=$('f-agree');
+    var PH='Укажите номер с кодом страны, например +7 900 000-00-00';
+    var CH={
+      whatsapp:{label:'Номер WhatsApp',ph:'+7 900 000-00-00',type:'tel',mode:'tel',ac:'tel',err:PH,done:'напишет вам в WhatsApp',crm:'Телефон (WhatsApp)'},
+      telegram:{label:'Ник или номер в Telegram',ph:'@имя или номер телефона',type:'text',mode:'text',ac:'off',err:'Укажите ник, например @anna_k, или номер телефона',done:'напишет вам в Telegram',crm:'Telegram'},
+      call:{label:'Номер телефона',ph:'+7 900 000-00-00',type:'tel',mode:'tel',ac:'tel',err:PH,done:'позвонит вам',crm:'Телефон (звонок)'},
+      email:{label:'Электронная почта',ph:'name@example.com',type:'email',mode:'email',ac:'email',err:'Проверьте адрес почты',done:'напишет вам на почту',crm:'Email'}
+    };
+    var chan=function(){ var r=f.querySelector('input[name="channel"]:checked'); return r?r.value:'whatsapp'; };
+    var isPhone=function(v){ var d=v.replace(/\D/g,''); return /^[+\d\s().-]+$/.test(v)&&d.length>=10&&d.length<=15; };
+    var tgName=function(v){ var m=v.replace(/^(https?:\/\/)?(t|telegram)\.me\//i,'').replace(/^@/,''); return /^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(m)?'@'+m:''; };
+    var isEmail=function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); };
+    var setErr=function(input,id,msg){ var e=$(id); e.textContent=msg||''; e.hidden=!msg; if(msg) input.setAttribute('aria-invalid','true'); else input.removeAttribute('aria-invalid'); return !msg; };
+    var checkName=function(){ return setErr(nameI,'e-name',nameI.value.trim().length>=2?'':'Укажите имя'); };
+    var checkContact=function(){ var c=chan(), v=contact.value.trim(), good=c==='email'?isEmail(v):c==='telegram'?(!!tgName(v)||isPhone(v)):isPhone(v); return setErr(contact,'e-contact',good?'':CH[c].err); };
+    var checkAgree=function(){ return setErr(agree,'e-agree',agree.checked?'':'Без согласия мы не сможем вам написать'); };
+    var applyChan=function(){ var c=CH[chan()]; contact.type=c.type; contact.setAttribute('inputmode',c.mode); contact.setAttribute('autocomplete',c.ac); contact.placeholder=c.ph; contact.setAttribute('aria-label',c.label); setErr(contact,'e-contact',''); };
+    var radios=f.querySelectorAll('input[name="channel"]');
+    for(var ri=0;ri<radios.length;ri++) radios[ri].addEventListener('change',applyChan);
+    applyChan();
+    /* a price card passes its room to the form, so the form does not have to ask */
+    var room='', setRoom=function(r){ room=r||''; $('f-room').textContent=room; $('f-picked').hidden=!room; };
+    var picks=document.querySelectorAll('[data-room]');
+    for(var pi=0;pi<picks.length;pi++) picks[pi].addEventListener('click',function(){ setRoom(this.getAttribute('data-room')); });
+    $('f-unpick').addEventListener('click',function(){ setRoom(''); });
+    /* the floating WhatsApp button must not cover the fields */
+    if(wa&&window.IntersectionObserver) new IntersectionObserver(function(en){ wa.classList.toggle('off',en[0].isIntersecting); },{rootMargin:'-80px 0px -40px 0px'}).observe(f);
+    nameI.addEventListener('input',function(){ if(nameI.hasAttribute('aria-invalid')) checkName(); });
+    contact.addEventListener('input',function(){ if(contact.hasAttribute('aria-invalid')) checkContact(); });
+    agree.addEventListener('change',function(){ if(agree.hasAttribute('aria-invalid')) checkAgree(); });
+    var collect=function(){
+      var c=chan(), v=contact.value.trim(), q={}, m, re=/[?&](utm_[a-z]+)=([^&#]*)/g;
+      while((m=re.exec(location.search))){ try{ q[m[1]]=decodeURIComponent(m[2].replace(/\+/g,' ')); }catch(e){} }
+      if(c==='telegram'&&tgName(v)) v=tgName(v);
+      return {name:nameI.value.trim(),channel:c,contact:v,room:room,message:$('f-msg').value.trim(),consent:true,source:'Сайт: детокс 1–7 марта 2027',lang:'ru',page:location.href.split('#')[0],referrer:document.referrer||'',utm:q,sent_at:new Date().toISOString()};
+    };
+    var done=function(d,draft){
+      var c=CH[d.channel];
+      $('ok-text').textContent=d.name+', координатор '+c.done+' в течение дня и ответит на все вопросы.';
+      var tg=$('ok-tg'), link=$('ok-tg-link');
+      if(d.channel==='telegram'&&(TG_BOT_URL||draft)){
+        $('ok-tg-text').textContent='Чтобы мы могли написать вам первыми, откройте наш бот в Telegram и нажмите «Начать».';
+        if(TG_BOT_URL) link.href=TG_BOT_URL; else if(!link.querySelector('.tbd')){ var t=document.createElement('span'); t.className='tbd'; t.textContent='ссылка'; link.appendChild(document.createTextNode(' ')); link.appendChild(t); }
+        tg.hidden=false;
+      } else tg.hidden=true;
+      var list=$('ok-list'); list.textContent='';
+      if(draft){
+        var rows=[['Имя',d.name],[c.crm,d.contact],['Тип комнаты',d.room],['Примечание',d.message],['Источник',d.source],['Язык общения','RU'],['Этап','Новая заявка']];
+        for(var i=0;i<rows.length;i++){ if(!rows[i][1]) continue; var dt=document.createElement('dt'), dd=document.createElement('dd'); dt.textContent=rows[i][0]; dd.textContent=rows[i][1]; list.appendChild(dt); list.appendChild(dd); }
+      }
+      $('ok-draft').hidden=!draft; list.hidden=!draft; $('ok-back').hidden=!draft;
+      body.hidden=true; ok.hidden=false; ok.focus({preventScroll:true});
+      var top=f.getBoundingClientRect().top; if(top<130) window.scrollBy(0,top-140);
+    };
+    $('ok-back').addEventListener('click',function(){ ok.hidden=true; body.hidden=false; nameI.focus(); });
+    var busy=function(on){ btn.disabled=on; btn.textContent=on?'Отправляем…':'Забронировать место'; f.setAttribute('aria-busy',on?'true':'false'); };
+    var failed=function(){
+      busy(false); fail.textContent='Не получилось отправить заявку. Попробуйте ещё раз';
+      if(WA_URL){ fail.appendChild(document.createTextNode(' или ')); var a=document.createElement('a'); a.href=WA_URL; a.target='_blank'; a.rel='noopener'; a.textContent='напишите нам в WhatsApp'; fail.appendChild(a); }
+      fail.appendChild(document.createTextNode('.')); fail.hidden=false;
+    };
+    f.addEventListener('submit',function(e){
+      e.preventDefault(); if(btn.disabled) return;
+      fail.hidden=true;
+      var a=checkName(), b=checkContact(), c=checkAgree();
+      if(!(a&&b&&c)){ (!a?nameI:!b?contact:agree).focus(); return; }
+      var d=collect();
+      if(f.elements['website'].value){ done(d,false); return; } /* a robot filled the hidden field: show success, send nothing */
+      if(!LEAD_ENDPOINT){ done(d,true); return; }
+      busy(true);
+      var ctl=window.AbortController?new AbortController():null, timer=setTimeout(function(){ if(ctl) ctl.abort(); },15000);
+      fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d),signal:ctl?ctl.signal:undefined})
+        .then(function(r){ clearTimeout(timer); if(!r.ok) throw new Error('status '+r.status); busy(false); done(d,false); })
+        .catch(function(){ clearTimeout(timer); failed(); });
+    });
+  }
+})();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function(){
+  var canvas=document.getElementById('globe'); if(!canvas || !window.d3) return;
+  var wrap=document.getElementById('globe-wrap');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ctx=canvas.getContext('2d');
+  var C={sea1:'#f7fbfc',sea2:'#d9ebf0',sea3:'#b9d8e2',land:'#e5e4d4',landLine:'#ffffff',india:'#c4cbaf',indiaLine:'#3c5535',grat:'rgba(32,40,26,.10)',rim:'rgba(32,40,26,.25)',ink:'#20281a',orange:'#ff6123',muted:'#777b6c'};
+  var BASE=[-66,-30];            // rotate(): centre lon 66E, lat 30N → Moscow and Bihar both visible
+  var rot=BASE.slice(), target=BASE.slice();
+  var DELHI=[77.21,28.61], PATNA=[85.14,25.59];
+  var origins=[{n:'Москва',p:[37.62,55.75],a:'end',dx:-12,dy:-10},{n:'Ташкент',p:[69.24,41.3],a:'end',dx:-12,dy:-10},{n:'Алматы',p:[76.89,43.24],a:'start',dx:12,dy:-8},{n:'Стамбул',p:[28.98,41.01],a:'end',dx:-12,dy:8},{n:'Дубай',p:[55.27,25.2],a:'end',dx:-12,dy:10}];
+  var cities=origins.map(function(o){o.o=true;return o;}).concat([{n:'Дели',p:DELHI,a:'end',dx:-12,dy:0},{n:'Патна',p:PATNA,a:'end',dx:-12,dy:14},{n:'Ананда Самбхути',p:[86.49,25.31],a:'start',dx:14,dy:-10,home:true}]);
+  /* v49: people fly to Delhi from anywhere: thin arcs from several cities, one plane takes a different origin each cycle */
+  var inLegs=origins.map(function(o){return [o.p,DELHI];});
+  var legs=[inLegs[0],[DELHI,PATNA]];
+  var world=null, land=null, india=null;
+  var size=0, dpr=1, proj=d3.geoOrthographic().clipAngle(90), path=d3.geoPath(proj,ctx), grat=d3.geoGraticule10();
+  var sphere={type:'Sphere'};
+  function resize(){
+    var w=wrap.clientWidth; if(!w) return; size=w; dpr=Math.min(2,window.devicePixelRatio||1);
+    canvas.width=w*dpr; canvas.height=w*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    proj.translate([w/2,w/2]).scale((w/2-6)*1.42);
+  }
+  function geoLine(a,b){ var ip=d3.geoInterpolate(a,b), n=48, c=[]; for(var i=0;i<=n;i++) c.push(ip(i/n)); return {type:'LineString',coordinates:c}; }
+  var inLines=inLegs.map(function(l){return geoLine(l[0],l[1]);}), leg2Line=geoLine(DELHI,PATNA);
+  function visible(p){ return d3.geoDistance(p,[-rot[0],-rot[1]]) < Math.PI/2 - 0.02; }
+  function drawPlane(x,y,ang,sz){ ctx.save(); ctx.translate(x,y); ctx.rotate(ang); ctx.fillStyle=C.ink; ctx.strokeStyle=C.ink; ctx.lineWidth=2; ctx.lineJoin='round';
+    ctx.beginPath(); ctx.moveTo(-sz,0); ctx.lineTo(sz*.55,-sz*.36); ctx.lineTo(sz,0); ctx.lineTo(sz*.55,sz*.36); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(-sz*.15,-sz*.12); ctx.lineTo(-sz*.85,-sz*.8); ctx.moveTo(-sz*.15,sz*.12); ctx.lineTo(-sz*.85,sz*.8); ctx.stroke(); ctx.restore(); }
+  var t0=performance.now();
+  function render(now){
+    var t=Math.max(0,(now-t0)/1000); /* v56: the first frame can carry a time before t0, a negative t picked a missing route and stopped the globe */
+    proj.rotate([rot[0],rot[1]]);
+    ctx.clearRect(0,0,size,size);
+    // sea
+    var g=ctx.createRadialGradient(size*.38,size*.32,size*.05,size*.5,size*.5,size*.52); g.addColorStop(0,C.sea1); g.addColorStop(.7,C.sea2); g.addColorStop(1,C.sea3);
+    ctx.beginPath(); path(sphere); ctx.fillStyle=g; ctx.fill();
+    // graticule
+    ctx.beginPath(); path(grat); ctx.strokeStyle=C.grat; ctx.lineWidth=1; ctx.stroke();
+    if(land){ ctx.beginPath(); path(land); ctx.fillStyle=C.land; ctx.fill(); ctx.strokeStyle=C.landLine; ctx.lineWidth=.7; ctx.stroke(); }
+    if(india){ ctx.beginPath(); path(india); ctx.fillStyle=C.india; ctx.fill(); ctx.strokeStyle=C.indiaLine; ctx.lineWidth=1.2; ctx.stroke(); }
+    // routes
+    ctx.save(); ctx.setLineDash([3,9]); ctx.lineDashOffset=reduce?0:-t*14; ctx.strokeStyle=C.ink; ctx.lineWidth=2; ctx.lineCap='round';
+    ctx.lineWidth=1.3; ctx.strokeStyle='rgba(32,40,26,.45)'; inLines.forEach(function(l){ ctx.beginPath(); path(l); ctx.stroke(); });
+    ctx.lineWidth=2; ctx.strokeStyle=C.ink; ctx.beginPath(); path(leg2Line); ctx.stroke(); ctx.restore();
+    // rim
+    ctx.beginPath(); path(sphere); ctx.strokeStyle=C.rim; ctx.lineWidth=1.5; ctx.stroke();
+    // cities
+    cities.forEach(function(c){ if(!visible(c.p)) return; var xy=proj(c.p); if(!xy) return;
+      ctx.font=c.o?'600 12px Montserrat, sans-serif':'700 13px Montserrat, sans-serif';
+      if(c.home && !reduce){ var ph=(t%2.4)/2.4; ctx.beginPath(); ctx.arc(xy[0],xy[1],6+24*ph,0,Math.PI*2); ctx.strokeStyle='rgba(255,97,35,'+(0.9*(1-ph)).toFixed(2)+')'; ctx.lineWidth=2; ctx.stroke(); }
+      ctx.beginPath(); ctx.arc(xy[0],xy[1],c.home?7:c.o?4.5:5.5,0,Math.PI*2); ctx.fillStyle=c.home?C.orange:c.o?C.muted:C.ink; ctx.fill(); ctx.strokeStyle='#fff'; ctx.lineWidth=2.5; ctx.stroke();
+      ctx.textAlign=c.a; ctx.textBaseline='middle'; ctx.lineWidth=4; ctx.strokeStyle='rgba(255,255,255,.85)'; var tx=xy[0]+c.dx, ty=xy[1]+c.dy; if(c.a==='start'){ var tw=ctx.measureText(c.n).width; if(tx+tw>size-10){ tx=Math.max(6,size-10-tw); ty-=8; } } ctx.strokeText(c.n,tx,ty); ctx.fillStyle=c.o?C.muted:C.ink; ctx.fillText(c.n,tx,ty); });
+    // planes: 11 s cycle, leg 1 0–4.5 s, leg 2 5–7.5 s
+    var cyc=reduce?2.2:(t%11), seg=null, f=0, oi=Math.floor(t/11)%inLegs.length;
+    legs[0]=inLegs[reduce?0:oi];
+    if(cyc<4.5){seg=0; f=cyc/4.5;} else if(cyc>=5 && cyc<7.5){seg=1; f=(cyc-5)/2.5;}
+    if(seg!==null){ var ip=d3.geoInterpolate(legs[seg][0],legs[seg][1]), e=1-Math.pow(1-f,2), f2=Math.max(0,Math.min(1,e)); var p0=ip(f2), p1=ip(Math.min(1,f2+0.01));
+      if(visible(p0)){ var a0=proj(p0), a1=proj(p1); if(a0&&a1){ var ang=Math.atan2(a1[1]-a0[1],a1[0]-a0[0]); ctx.save(); ctx.shadowColor='rgba(32,40,26,.3)'; ctx.shadowBlur=8; ctx.shadowOffsetY=4; drawPlane(a0[0],a0[1],ang,seg===0?13:10); ctx.restore(); } } }
+  }
+  // interaction: drag to rotate; eases back to the route after 3 s idle
+  var dragging=false, last=null, idleSince=0;
+  canvas.addEventListener('pointerdown',function(e){ dragging=true; last=[e.clientX,e.clientY]; canvas.setPointerCapture(e.pointerId); canvas.classList.add('grabbing'); });
+  canvas.addEventListener('pointermove',function(e){ if(!dragging) return; var k=0.35; rot[0]+= (e.clientX-last[0])*k; rot[1]= Math.max(-75,Math.min(75, rot[1]-(e.clientY-last[1])*k)); last=[e.clientX,e.clientY]; });
+  function endDrag(){ if(!dragging) return; dragging=false; idleSince=performance.now(); canvas.classList.remove('grabbing'); }
+  canvas.addEventListener('pointerup',endDrag); canvas.addEventListener('pointercancel',endDrag); canvas.addEventListener('pointerleave',function(){ if(dragging) endDrag(); });
+  var inView=true; if('IntersectionObserver' in window){ new IntersectionObserver(function(en){ inView=en[0].isIntersecting; },{threshold:0}).observe(wrap); }
+  function loop(now){
+    if(inView){
+      if(!dragging){
+        var sway=reduce?[0,0]:[3*Math.sin(now/7000),1.5*Math.sin(now/9000+1)];
+        target=[BASE[0]+sway[0],BASE[1]+sway[1]];
+        if(now-idleSince>3000){ rot[0]+= (target[0]-rot[0])*0.04; rot[1]+= (target[1]-rot[1])*0.04; }
+      }
+      render(now);
+    }
+    requestAnimationFrame(loop);
+  }
+  resize(); window.addEventListener('resize',function(){ resize(); render(performance.now()); });
+  render(performance.now());
+  fetch(((window.ASJ_DETOX||{}).base||'')+'world.json').then(function(r){return r.json();}).then(function(w){
+    world=w; var feats=w.features;
+    india=feats.filter(function(f){return f.id==='356';})[0]||null;
+    land={type:'FeatureCollection',features:feats.filter(function(f){return f.id!=='356';})};
+    render(performance.now());
+  }).catch(function(){ /* globe stays with graticule only */ });
+  requestAnimationFrame(loop);
+})();
+</script>
