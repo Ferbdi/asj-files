@@ -873,7 +873,7 @@
       busy(true);
       var ctl=window.AbortController?new AbortController():null, timer=setTimeout(function(){ if(ctl) ctl.abort(); },15000);
       fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d),signal:ctl?ctl.signal:undefined})
-        .then(function(r){ clearTimeout(timer); if(!r.ok) throw new Error('status '+r.status); busy(false); done(d,false); })
+        .then(function(r){ clearTimeout(timer); if(!r.ok) throw new Error('status '+r.status); return r.json().catch(function(){ return {}; }); }).then(function(j){ if(j&&j.ok===false) throw new Error(j.error||'handler'); if(j&&j.lead_id&&TG_BOT_URL) TG_BOT_URL=TG_BOT_URL.split('?')[0]+'?start=lead'+String(j.lead_id).replace(/[^0-9]/g,''); busy(false); done(d,false); })
         .catch(function(){ clearTimeout(timer); failed(); });
     });
   }
