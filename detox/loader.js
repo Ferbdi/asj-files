@@ -8,7 +8,7 @@
   var me = document.currentScript;
   var BASE = me.src.replace(/[?#].*$/, '').replace(/[^\/]*$/, '');
   var V = '75-cd22424c';
-  var cfg = {"leadEndpoint":"","tgBotUrl":"https://t.me/AnandaSambhutiBot","waUrl":""};
+  var cfg = {"leadEndpoint":"https://script.google.com/macros/s/AKfycbwMOYnW0wFMvf6LygSGaKhbFZAsJzHievESLWXVjZ9_CZhKN4a7S6zCtIiHMCJ2SWn4Zg/exec","tgBotUrl":"https://t.me/AnandaSambhutiBot","waUrl":""};
   cfg.base = BASE; cfg.version = V; cfg.loaded = true;
   window.ASJ_DETOX = cfg;
 
