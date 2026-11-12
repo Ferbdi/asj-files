@@ -1,5 +1,5 @@
-<!-- Detox landing v76 body. Loaded by loader.js into #asj-detox. -->
-<div class="draft"><span>Черновик дизайна, версия 76 от 12.11.2026 · жёлтым отмечено то, что ещё уточняем</span></div>
+<!-- Detox landing v77 body. Loaded by loader.js into #asj-detox. -->
+<div class="draft"><span>Черновик дизайна, версия 77 от 13.11.2026 · жёлтым отмечено то, что ещё уточняем</span></div>
 
 <nav class="top" aria-label="Разделы страницы">
   <div class="wrap">
@@ -205,178 +205,95 @@
           </g>
         </svg>
       </div>
-      <div class="sph-kicker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5a2 2 0 1 1 4 0v6"/><path d="M13 10a2 2 0 1 1 4 0v2"/><path d="M17 12a2 2 0 1 1 4 0v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-5-2.6L4.4 15a1.9 1.9 0 0 1 2.9-2.4L9 14.5"/></svg>Выберите сферу, карточки сменятся</div>
-      <div class="sph" role="tablist" aria-label="Сферы программы">
-        <button type="button" class="body" data-s="body" role="tab"><i></i><span><b>Тело</b><small>питание, процедуры, движение</small></span><em>7</em></button>
-        <button type="button" class="mind" data-s="mind" role="tab"><i></i><span><b>Ум</b><small>ритм дня, отдых, тишина</small></span><em>6</em></button>
-        <button type="button" class="soul" data-s="soul" role="tab"><i></i><span><b>Душа</b><small>медитация и беседы</small></span><em>3</em></button>
-      </div>
-      <div class="deck-stage">
-        <div class="shelf" aria-hidden="true">
-          <div class="shape contours deckpat" style="left:-180px;top:-120px"></div>
-          <div class="shape contours small deckpat" style="right:-100px;top:-40px"></div>
-          <div class="shape contours small deckpat" style="left:40%;top:120px;width:300px;height:300px"></div>
+      <div class="sph3" id="spheres">
+        <div class="s3-col body" data-s="body">
+          <div class="s3-hd"><i></i><b>Тело</b><small>питание, процедуры, движение</small></div>
+          <div class="s3-list">
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/monk-veg.webp" alt="Монах центра с овощами" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Детокс-питание</span><span class="s3-ss">Одно меню для всех.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/monk-veg.webp" alt="Монах центра с овощами" loading="lazy" decoding="async"></span><span class="s3-wh">Три раза в день</span>Меню разработал нутрициолог и натуропат <span class="tbd">имя</span>. Готовит команда поваров центра.<span class="s3-who"><span>Нутрициолог</span><span>Кухня</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/stock-massage.webp" alt="Массаж спины, стоковое фото" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Массажи</span><span class="s3-ss">С маслами и травами.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/stock-massage.webp" alt="Массаж спины, стоковое фото" loading="lazy" decoding="async"><span class="stock tbd">стоковое</span></span><span class="s3-wh">Днём</span>Аюрведический массаж разных зон тела по рекомендации врача. <span class="tbd">список массажей</span>. Снимают напряжение и помогают телу очищаться.<span class="s3-who"><span>Аюрведа</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/stock-mud.webp" alt="Нанесение грязи на спину, стоковое фото" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Грязевые ванны</span><span class="s3-ss">С аюрведической глиной.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/stock-mud.webp" alt="Нанесение грязи на спину, стоковое фото" loading="lazy" decoding="async"><span class="stock tbd">стоковое</span></span><span class="s3-wh">Днём</span>Очищают тело и успокаивают ум. Врач подбирает процедуру лично под вас.<span class="s3-who"><span>Аюрведа</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/stock-steam.webp" alt="Пар над камнями в парной, стоковое фото" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Сведана</span><span class="s3-ss">Паровая баня с травами.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/stock-steam.webp" alt="Пар над камнями в парной, стоковое фото" loading="lazy" decoding="async"><span class="stock tbd">стоковое</span></span><span class="s3-wh">Днём</span>Вы сидите в фитобочке, голова снаружи, тело прогревается травяным паром. Хорошо расслабляет и помогает телу очищаться.<span class="s3-who"><span>Аюрведа</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/yoga-hall.webp" alt="Йога в зале центра" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Йога-асаны</span><span class="s3-ss">Каждый день и свой комплекс.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/yoga-hall.webp" alt="Йога в зале центра" loading="lazy" decoding="async"></span><span class="s3-wh">Утром</span>Мягкие упражнения возвращают телу лёгкость. Инструктор составит короткий комплекс под ваше здоровье, чтобы вы продолжали дома.<span class="s3-who"><span>Марина</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/practice.webp" alt="Занятие в зале центра" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Динамичные практики йоги</span><span class="s3-ss">Нагрузка прямо на коврике.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/practice.webp" alt="Занятие в зале центра" loading="lazy" decoding="async"></span><span class="s3-wh">Утром</span>Дают телу аэробную нагрузку, как кардио, только на коврике. Серьёзная подготовка не нужна.<span class="s3-who"><span>Инструктор</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/stock-sun.webp" alt="Человек отдыхает на солнце, стоковое фото" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Солнечные ванны</span><span class="s3-ss">Прогулки под мягким солнцем.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/stock-sun.webp" alt="Человек отдыхает на солнце, стоковое фото" loading="lazy" decoding="async"><span class="stock tbd">стоковое</span></span><span class="s3-wh">Утром и вечером</span>Неспешные прогулки, пока солнце греет мягко. Специалист подскажет, какие зоны тела прогревать именно вам.<span class="s3-who"><span>Специалист</span></span></span></span></div>
+          </div>
         </div>
-        <button type="button" class="arrow prev" aria-label="Предыдущая карточка"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <button type="button" class="arrow next" aria-label="Следующая карточка"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
-        <article class="dcard body" tabindex="0" data-i="0">
-          <div class="in">
-          <div class="pic"><img src="img/monk-veg.webp" alt="Монах центра с овощами" loading="lazy"></div>
-          <div class="txt"><span class="when body">Тело · питание</span><h3>Детокс-питание</h3><p class="sub">Три приёма в день, меню одно для всех.</p><p class="more"><span>Меню для детокса разработал нутрициолог и натуропат <span class="tbd">имя</span>, а готовит команда поваров нашего центра.</span></p><div class="who"><span class="doc">Нутрициолог</span><span>Кухня</span></div></div>
+        <div class="s3-col mind" data-s="mind">
+          <div class="s3-hd"><i></i><b>Ум</b><small>отдых, тишина, общение</small></div>
+          <div class="s3-list">
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/shavasana.webp" alt="Шавасана в зале центра" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Глубокое расслабление</span><span class="s3-ss">Под голос инструктора.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/shavasana.webp" alt="Шавасана в зале центра" loading="lazy" decoding="async"></span><span class="s3-wh">Вечером</span>Йога-нидра, шавасана и тратака. Вы следуете за голосом инструктора, и напряжение постепенно уходит.<span class="s3-who"><span>Инструктор</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/hill-sunset.webp" alt="Закат над холмами" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Цифровой отдых</span><span class="s3-ss">Меньше экрана, дом на связи.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/hill-sunset.webp" alt="Закат над холмами" loading="lazy" decoding="async"></span><span class="s3-wh">По желанию</span>Редкая возможность не начинать день с новостей и срочных сообщений. И отвыкнуть от долгого скроллинга.</span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/walk.webp" alt="Гости идут по тропе к холмам" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Прогулки по холмам</span><span class="s3-ss">Тишина, скалы, поля, закат.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/walk.webp" alt="Гости идут по тропе к холмам" loading="lazy" decoding="async"></span><span class="s3-wh">Вечером</span>Прогулки в тишине по территории и холмам. Это тоже часть программы: ум отдыхает так же, как тело.<span class="s3-who"><span>Команда</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/rock-group.webp" alt="Группа гостей на скалах" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Тёплый круг</span><span class="s3-ss">Люди, приехавшие за тем же.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/rock-group.webp" alt="Группа гостей на скалах" loading="lazy" decoding="async"></span><span class="s3-wh">Вечером</span>Общие завтраки, вечерние разговоры, прогулки вместе.<span class="s3-who"><span>Команда</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/candles.webp" alt="Свечи на закате у центра" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Личный дневник</span><span class="s3-ss">Для мыслей и перемен в себе.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/candles.webp" alt="Свечи на закате у центра" loading="lazy" decoding="async"></span><span class="s3-wh">Каждый день</span>Когда ум отдыхает, приходят ясные мысли. Тетрадь даём, вы увозите её с собой.</span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/lecture-group.webp" alt="Участники слушают лекцию" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Лекции о здоровье</span><span class="s3-ss">О йогическом образе жизни.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/lecture-group.webp" alt="Участники слушают лекцию" loading="lazy" decoding="async"></span><span class="s3-wh">Вечером</span>Монахи рассказывают о простых привычках, которые можно продолжать дома.<span class="s3-who"><span>Монахи</span></span></span></span></div>
           </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="1">
-          <div class="in">
-          <div class="pic"><img src="img/stock-massage.webp" alt="Массаж спины, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
-          <div class="txt"><span class="when body">Тело · процедура</span><h3>Массажи</h3><p class="sub">Аюрведические, с маслами и травами.</p><p class="more"><span>Массаж разных зон тела по рекомендации врача. <span class="tbd">список массажей</span>. Снимают напряжение и помогают телу очищаться.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
+        </div>
+        <div class="s3-col soul" data-s="soul">
+          <div class="s3-hd"><i></i><b>Душа</b><small>медитация и беседы</small></div>
+          <div class="s3-list">
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img class="zoom" src="img/kirtan-monks.webp" alt="Медитация в зале с монахами" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Медитация в молчании</span><span class="s3-ss">Утро и вечер наедине с собой.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img class="zoom" src="img/kirtan-monks.webp" alt="Медитация в зале с монахами" loading="lazy" decoding="async"></span><span class="s3-wh">В 6:00 и 18:00</span>Время побыть в тишине с собой. Технике с нуля обучают монахи. Групповые сессии проходят каждый день, утром и вечером.<span class="s3-who"><span>Монахи</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img class="zk" src="img/kirtan.webp" alt="Киртан в зале центра" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Медитация в движении</span><span class="s3-ss">Киртан: пение мантры.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img class="zk" src="img/kirtan.webp" alt="Киртан в зале центра" loading="lazy" decoding="async"></span><span class="s3-wh">Перед медитацией</span>Успокаивает ум и тело и настраивает на медитацию.<span class="s3-who"><span>Монахи</span></span></span></span></div>
+            <div class="s3-e" tabindex="0" role="button" aria-expanded="false"><span class="s3-row"><span class="s3-ph"><img src="img/meditation-group.webp" alt="Беседа с монахами в зале" loading="lazy" decoding="async"></span><span class="s3-tx"><span class="s3-tt">Беседы о медитации</span><span class="s3-ss">Разговоры о развитии души.</span></span></span><span class="s3-mo"><span><span class="s3-bp"><img src="img/meditation-group.webp" alt="Беседа с монахами в зале" loading="lazy" decoding="async"></span><span class="s3-wh">Вечером</span>Как встроить медитацию в обычную жизнь. Простым языком, можно задавать вопросы.<span class="s3-who"><span>Монахи</span></span></span></span></div>
           </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="2">
-          <div class="in">
-          <div class="pic"><img src="img/stock-mud.webp" alt="Нанесение грязи на спину, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
-          <div class="txt"><span class="when body">Тело · процедура</span><h3>Грязевые ванны</h3><p class="sub">С аюрведической глиной.</p><p class="more"><span>Очищают тело, балансируют первоэлементы, успокаивают ум. Подбирает наш врач по вашей конституции и дошам.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
-          </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="3">
-          <div class="in">
-          <div class="pic"><img src="img/stock-steam.webp" alt="Пар над камнями в парной, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
-          <div class="txt"><span class="when body">Тело · процедура</span><h3>Сведана</h3><p class="sub">Паровая баня с травами.</p><p class="more"><span>Прогрев паром в фитобочке, голова снаружи. Улучшает кожу и дыхание, даёт общий детокс-эффект и хорошо расслабляет.</span></p><div class="who"><span class="doc">Аюрведа</span></div></div>
-          </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="4">
-          <div class="in">
-          <div class="pic"><img src="img/stock-sun.webp" alt="Человек отдыхает в шезлонге на солнце, стоковое фото" loading="lazy"><span class="stock tbd">стоковое</span></div>
-          <div class="txt"><span class="when body">Тело · процедура</span><h3>Солнечные ванны</h3><p class="sub">Мягкое солнце утром и вечером.</p><p class="more"><span>Неспешные прогулки, пока солнце мягко греет и восполняет витамин D. Специалист подскажет, какие зоны прогревать вам.</span></p><div class="who"><span class="doc">Специалист</span></div></div>
-          </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="5">
-          <div class="in">
-          <div class="pic"><img src="img/yoga-hall.webp" alt="Йога в зале центра, октябрьский ретрит" loading="lazy"></div>
-          <div class="txt"><span class="when body">Тело · утро</span><h3>Йога-асаны</h3><p class="sub">Каждый день и личный комплекс.</p><p class="more"><span>Мягкое движение вернёт телу лёгкость. Инструктор составит мини-комплекс под ваше здоровье, чтобы заниматься и дома.</span></p><div class="who"><span>Марина</span></div></div>
-          </div>
-        </article>
-        <article class="dcard body" tabindex="0" data-i="6">
-          <div class="in">
-          <div class="pic"><img src="img/practice.webp" alt="Занятие в зале центра" loading="lazy"></div>
-          <div class="txt"><span class="when body">Тело · утро</span><h3>Динамичные практики йоги</h3><p class="sub">Нагрузка прямо на коврике.</p><p class="more"><span>Уникальные практики йоги дают телу аэробную нагрузку и не требуют серьёзной подготовки.</span></p><div class="who"><span>Инструктор</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="6">
-          <div class="in">
-          <div class="pic"><img src="img/walk.webp" alt="Гости идут по тропе к холмам у центра" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Прогулки по холмам</h3><p class="sub">Тишина, скалы, рисовые поля, закат.</p><p class="more"><span>Прогулки в тишине по территории и холмам. Это тоже часть программы: ум отдыхает так же, как тело.</span></p><div class="who"><span>Команда</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="7">
-          <div class="in">
-          <div class="pic"><img src="img/lecture-group.webp" alt="Участники слушают лекцию в зале центра" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Лекции о здоровье</h3><p class="sub">Здоровье и йогический образ жизни.</p><p class="more"><span>Йогические монахи о простых, но действенных привычках, которые сделают жизнь ярче и здоровее.</span></p><div class="who"><span>Монахи</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="8">
-          <div class="in">
-          <div class="pic"><img src="img/hill-sunset.webp" alt="Закат над холмами без экранов" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · по желанию</span><h3>Цифровой отдых</h3><p class="sub">Меньше экрана, связь с домом остаётся.</p><p class="more"><span>Редкая возможность не начинать день с новостей и срочных сообщений и отвыкнуть от долгого скроллинга.</span></p><div class="who"><span>По желанию</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="9">
-          <div class="in">
-          <div class="pic"><img src="img/candles.webp" alt="Свечи на закате у центра" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · каждый день</span><h3>Личный дневник</h3><p class="sub">Мысли, инсайты, перемены.</p><p class="more"><span>Когда ум расслаблен, приходят самые нужные и точные идеи. Тетрадь даём, увозите с собой.</span></p><div class="who"><span>Тетрадь даём</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="10">
-          <div class="in">
-          <div class="pic"><img src="img/rock-group.webp" alt="Группа гостей на скалах" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Тёплый круг</h3><p class="sub">Люди, приехавшие за тем же.</p><p class="more"><span>Общие завтраки, вечерние разговоры, прогулки вместе.</span></p><div class="who"><span>Команда</span></div></div>
-          </div>
-        </article>
-        <article class="dcard mind" tabindex="0" data-i="11">
-          <div class="in">
-          <div class="pic"><img src="img/shavasana.webp" alt="Шавасана в зале центра, октябрьский ретрит" loading="lazy"></div>
-          <div class="txt"><span class="when mind">Ум · вечер</span><h3>Глубокое расслабление</h3><p class="sub">Йога-нидра, шавасана, тратака.</p><p class="more"><span>На классах релаксации вы следуете за голосом инструктора и расслабляетесь глубже, чем во сне.</span></p><div class="who"><span>Инструктор</span></div></div>
-          </div>
-        </article>
-        <article class="dcard soul" tabindex="0" data-i="11">
-          <div class="in">
-          <div class="pic"><img src="img/kirtan-monks.webp" alt="Медитация в молчании в зале с монахами" loading="lazy"></div>
-          <div class="txt"><span class="when soul">Душа · 6:00 и 18:00</span><h3>Медитация в молчании</h3><p class="sub">Начало и конец дня наедине с собой.</p><p class="more"><span>Время познакомиться с настоящим собой. Технике с нуля обучают йога-монахи, групповые сессии каждый день.</span></p><div class="who"><span>Монахи</span></div></div>
-          </div>
-        </article>
-        <article class="dcard soul" tabindex="0" data-i="12">
-          <div class="in">
-          <div class="pic"><img src="img/kirtan.webp" alt="Киртан в зале центра" loading="lazy"></div>
-          <div class="txt"><span class="when soul">Душа · перед медитацией</span><h3>Медитация в движении</h3><p class="sub">Киртан, мантра-пение.</p><p class="more"><span>Погружает в медитативное состояние, успокаивает ум и тело и настраивает психику на конструктивный лад.</span></p><div class="who"><span>Монахи</span></div></div>
-          </div>
-        </article>
-        <article class="dcard soul" tabindex="0" data-i="13">
-          <div class="in">
-          <div class="pic"><img src="img/meditation-group.webp" alt="Беседа с монахами в зале" loading="lazy"></div>
-          <div class="txt"><span class="when soul">Душа · вечер</span><h3>Беседы о медитации</h3><p class="sub">Разговоры о развитии души.</p><p class="more"><span>Как встроить медитативную практику в повседневную жизнь. Простым языком, можно задавать вопросы.</span></p><div class="who"><span>Монахи</span></div></div>
-          </div>
-        </article>
+        </div>
       </div>
-      <div class="deck-nav"><span class="cnt">Тело · 1 / 7</span><span class="hint"><span class="hd">наведите на карточку, чтобы прочитать подробнее</span><span class="hm">листайте стрелками</span></span></div>
+      <p class="s3-hint">Нажмите на занятие, оно раскроется с фото и описанием</p>
     </div>
 <script>
+/* programme: three sphere cards, one row open at a time */
 (function(){
-  var root=document.getElementById('deck'); if(!root) return;
-  var stage=root.querySelector('.deck-stage'), cards=[].slice.call(root.querySelectorAll('.dcard')), cnt=root.querySelector('.cnt'), sph=[].slice.call(root.querySelectorAll('.sph button')), vxs=[].slice.call(root.querySelectorAll('.tri4 .vx'));
-  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var ORDER=['body','mind','soul'], NAME={body:'Тело',mind:'Ум',soul:'Душа'}, cur='body', set=[], act=0, m=0, PX=150, STEP=4, timer=null, used=false, busy=false;
-  var CW=230, CH=384, MARG=120;
-  function fit(){ var W=stage.clientWidth||1200; stage.classList.toggle('few',m<=3); stage.classList.toggle('compact',m>=6&&W<1320); CW=m<=3?300:(m>=6&&W<1320)?200:230; CH=m<=3?460:(m>=6&&W<1320)?356:384; MARG=m<=3?160:(W<1320?160:120); PX=m<=1?0:m<=3?Math.min(340,(W-CW-MARG)/(m-1)):Math.min(205,(W-CW-MARG)/(m-1)); STEP=Math.asin(Math.min(.9,PX/(CH*12)))*180/Math.PI; }
-  function lay(){
-    var W=stage.clientWidth||1200, avail=W-MARG, R=CH*12;
-    var offL=act>0?1:0, offR=act<m-1?1:0, nG=offL+offR, want=Math.max(0,CW-PX+32);
-    var PXe=m>1?Math.max(PX*.8,Math.min(PX,(avail-CW-nG*want)/(m-1))):0;
-    var G=m>1?Math.max(0,Math.min(want,(avail-CW-(m-1)*PXe)/Math.max(1,nG))):0;
-    var span=(m-1)*PXe+offL*G+offR*G;
-    set.forEach(function(c,j){ var x=j*PXe+(j>=act?offL*G:0)+(j>act?offR*G:0)-span/2, on=j===act;
-      var ang=Math.asin(Math.max(-.9,Math.min(.9,x/R)))*180/Math.PI;
-      c.style.setProperty('--lift',on?'-26px':'0px'); c.style.transform='rotate('+ang.toFixed(3)+'deg) translateY(calc(var(--lift,0px) + var(--dy,0px)))';
-      c.style.setProperty('--z',String(100+j));
-      c.style.opacity='1'; c.style.pointerEvents=''; c.classList.toggle('on',on); });
-    cnt.textContent=NAME[cur]+' · '+(act+1)+' / '+m;
+  var st=document.getElementById('spheres'); if(!st) return;
+  var rows=[].slice.call(st.querySelectorAll('.s3-e')), cols=[].slice.call(st.querySelectorAll('.s3-col')), raf=0;
+  var calm=window.matchMedia('(prefers-reduced-motion: reduce)'), bar=document.querySelector('nav.top');
+  function pan(x){ return x.querySelector('.s3-mo'); }
+  /* finish whatever is still moving, so a quick second tap starts from a clean state */
+  function settle(){ if(raf){ cancelAnimationFrame(raf); raf=0; }
+    rows.forEach(function(y){ pan(y).style.height=y.classList.contains('on')?'auto':'0px'; }); }
+  /* the photo leaves the row at once; the text slides into its place by transform only */
+  function sw(x,on){ var tx=x.querySelector('.s3-tx'), l0=tx.getBoundingClientRect().left;
+    x.classList.toggle('on',on); x.setAttribute('aria-expanded',on?'true':'false');
+    var d=l0-tx.getBoundingClientRect().left;
+    if(d&&!calm.matches){ tx.style.transition='none'; tx.style.transform='translateX('+d+'px)'; tx.getBoundingClientRect(); tx.style.transition=''; tx.style.transform=''; } }
+  /* decode the big photo before the first opening */
+  function warm(x){ var im=x.querySelector('.s3-bp img'); if(im.w) return; im.w=1; im.loading='eager'; if(im.decode) im.decode().catch(function(){}); }
+  function toggle(x){
+    settle(); warm(x);
+    var was=x.classList.contains('on'), old=null;
+    rows.forEach(function(y){ if(y!==x&&y.classList.contains('on')) old=y; });
+    var open=was?null:x, close=was?x:old, hc=0, ho=0;
+    var top0=x.getBoundingClientRect().top, safe=(bar?Math.max(0,bar.getBoundingClientRect().bottom):0)+12;
+    if(close){ hc=pan(close).offsetHeight; pan(close).style.height=hc+'px'; sw(close,false); }
+    if(open){ sw(open,true); pan(open).style.height='auto'; ho=pan(open).offsetHeight; pan(open).style.height='0px'; }
+    /* where the row should end up: fully visible, below the sticky menu */
+    var top1=top0;
+    if(open){ var low=16, wa=document.querySelector('.wa-float'); if(wa&&window.innerWidth<760) low=Math.max(16,window.innerHeight-wa.getBoundingClientRect().top+10); var over=top0+x.offsetHeight+ho-(window.innerHeight-low); top1=top0-Math.max(0,over); if(top1<safe) top1=Math.min(top0,safe); if(top0<safe) top1=safe; }
+    var t0=0, T=calm.matches?0:Math.min(560,360+Math.abs(top1-top0)*.5);
+    function step(now){ if(!t0) t0=now; var t=T?Math.min(1,(now-t0)/T):1, e=1-Math.pow(1-t,3);
+      if(close) pan(close).style.height=hc*(1-e)+'px';
+      if(open) pan(open).style.height=ho*e+'px';
+      var d=Math.round(x.getBoundingClientRect().top-(top0+(top1-top0)*e));
+      if(d) window.scrollBy({top:d,left:0,behavior:'instant'});
+      if(t<1) raf=requestAnimationFrame(step); else { raf=0; if(open) pan(open).style.height='auto'; } }
+    raf=requestAnimationFrame(step);
   }
-  function deal(){ set.forEach(function(c){ c.classList.add('jump'); }); lay(); void stage.offsetWidth; set.forEach(function(c){ c.classList.remove('jump'); }); }
-  function pick(sp,j){ if(busy) return; busy=true; var same=(sp===cur); cur=sp; act=j||0;
-    sph.forEach(function(b){ b.classList.toggle('on',b.dataset.s===sp); b.setAttribute('aria-selected',b.dataset.s===sp?'true':'false'); }); vxs.forEach(function(g){ g.classList.toggle('on',g.dataset.s===sp); }); ORDER.forEach(function(o){ stage.classList.toggle(o,o===sp); });
-    if(same){ lay(); busy=false; return; }
-    var old=set, T=reduce?0:340;
-    if(!reduce){ old.forEach(function(c,j){ c.style.setProperty('--d',(j*30)+'ms'); c.classList.remove('on'); c.classList.add('out'); }); }
-    setTimeout(function(){
-      old.forEach(function(c){ c.classList.remove('out'); c.style.setProperty('--d','0s'); });
-      set=cards.filter(function(c){ return c.classList.contains(sp); }); m=set.length; cards.forEach(function(c){ c.classList.toggle('off',set.indexOf(c)<0); c.classList.remove('on'); }); fit();
-      if(reduce){ lay(); busy=false; return; }
-      set.forEach(function(c){ c.classList.add('jump','pre'); }); lay(); void stage.offsetWidth;
-      set.forEach(function(c,j){ c.classList.remove('jump'); c.style.setProperty('--d',(Math.abs(j-act)*55)+'ms'); c.classList.remove('pre'); });
-      busy=false;
-      setTimeout(function(){ set.forEach(function(c){ c.style.setProperty('--d','0s'); }); }, 55*m+650);
-    }, T);
-  }
-  function step(d){ var a=act+d; if(a>=m||a<0){ var i=(ORDER.indexOf(cur)+(d>0?1:ORDER.length-1))%ORDER.length; var sp=ORDER[i]; var mm=cards.filter(function(c){return c.classList.contains(sp);}).length; pick(sp,d>0?0:mm-1); } else { act=a; lay(); } }
-  function start(){ if(reduce||timer||used) return; timer=setInterval(function(){ step(1); },5000); }
-  function stop(){ clearInterval(timer); timer=null; }
-  sph.forEach(function(b){ b.addEventListener('click',function(){ used=true; stop(); pick(b.dataset.s,0); }); });
-  vxs.forEach(function(g){ g.addEventListener('click',function(){ used=true; stop(); pick(g.dataset.s,0); }); g.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); used=true; stop(); pick(g.dataset.s,0); } }); });
-  var hoverOK=window.matchMedia&&window.matchMedia('(hover: hover) and (pointer: fine)').matches, hT=null;
-  cards.forEach(function(c){
-    if(hoverOK){
-      c.addEventListener('pointerenter',function(){ var j=set.indexOf(c); if(j>=0&&j!==act){ used=true; stop(); act=j; lay(); } });
-      c.addEventListener('pointerleave',function(){ clearTimeout(hT); });
-    }
-    c.addEventListener('click',function(){ used=true; stop(); var j=set.indexOf(c); if(j>=0){ act=j; lay(); } });
-    c.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); c.click(); } });
+  rows.forEach(function(x){
+    x.addEventListener('click',function(){ toggle(x); });
+    x.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(x); } });
+    x.addEventListener('pointerenter',function(){ warm(x); });
+    x.addEventListener('touchstart',function(){ warm(x); },{passive:true});
+    x.addEventListener('focus',function(){ warm(x); });
   });
-  root.querySelector('.prev').addEventListener('click',function(){ used=true; stop(); step(-1); });
-  root.querySelector('.next').addEventListener('click',function(){ used=true; stop(); step(1); });
-  root.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'){ used=true; stop(); step(1); } if(e.key==='ArrowLeft'){ used=true; stop(); step(-1); } });
-  root.addEventListener('mouseenter',stop); root.addEventListener('mouseleave',start);
-  set=cards.filter(function(c){ return c.classList.contains('body'); }); m=set.length; cards.forEach(function(c){ c.classList.toggle('off',set.indexOf(c)<0); });
-  sph[0].classList.add('on'); sph[0].setAttribute('aria-selected','true'); if(vxs[0]) vxs[0].classList.add('on'); stage.classList.add('body'); fit(); lay();
-  window.addEventListener('resize',function(){ fit(); lay(); });
-  if('IntersectionObserver' in window){ new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting) start(); else stop(); }); },{threshold:.3}).observe(root); } else start();
+  /* the triangle points at its card */
+  [].forEach.call(document.querySelectorAll('.tri4 .vx'),function(g){
+    var col=st.querySelector('.s3-col.'+g.getAttribute('data-s')); if(!col) return;
+    function mark(on){ col.classList.toggle('hl',on); }
+    function go(){ cols.forEach(function(c){ c.classList.remove('hl'); }); mark(true); setTimeout(function(){ mark(false); },1600);
+      var r=col.getBoundingClientRect(); if(r.top<80||r.top>window.innerHeight-160) col.scrollIntoView({block:'start',behavior:calm.matches?'auto':'smooth'}); }
+    g.addEventListener('mouseenter',function(){ mark(true); }); g.addEventListener('mouseleave',function(){ mark(false); });
+    g.addEventListener('click',go);
+    g.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
 })();
 </script>
 </section>
