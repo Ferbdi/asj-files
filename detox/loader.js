@@ -1,4 +1,4 @@
-/* Detox landing loader for Tilda (build 79-db6ce27a).
+/* Detox landing loader for Tilda (build 80-0f8ba2a1).
    Tilda block T123 holds only:
      <div id="asj-detox"></div>
      <script src="https://<file hosting>/detox/loader.js"></script>
@@ -7,7 +7,7 @@
   if (window.ASJ_DETOX && window.ASJ_DETOX.loaded) return;
   var me = document.currentScript;
   var BASE = me.src.replace(/[?#].*$/, '').replace(/[^\/]*$/, '');
-  var V = '79-db6ce27a';
+  var V = '80-0f8ba2a1';
   var cfg = {"leadEndpoint":"https://script.google.com/macros/s/AKfycbwMOYnW0wFMvf6LygSGaKhbFZAsJzHievESLWXVjZ9_CZhKN4a7S6zCtIiHMCJ2SWn4Zg/exec","tgBotUrl":"https://t.me/AnandaSambhutiBot","waUrl":""};
   cfg.base = BASE; cfg.version = V; cfg.loaded = true;
   window.ASJ_DETOX = cfg;
